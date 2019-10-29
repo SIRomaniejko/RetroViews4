@@ -1,0 +1,29 @@
+.commentBox{
+	width: 291px;
+	height: 84px;
+	border-radius: 5px;
+	border: 1px black solid;
+}
+.comment{
+	width: 100%;
+	height: 100%;
+}
+.nombre{
+	font-size: 25px;
+	width: 100%;
+}
+.nombre img{
+	height: 25px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+p, h4{
+	margin: 0 0 0 5px;
+}
+.dislike{
+	background-color: #FFDCDC;
+}
+.like{
+	background-color: #DBFFDA;
+}
