@@ -138,6 +138,9 @@ span{
 	.episodio p{
 		font-size: 20px;
 	}
+	.botonera{
+		margin-bottom: 15px;
+	}
 	.botonera span:hover{
 		border-bottom: #ACD439 2px solid;
 	}
