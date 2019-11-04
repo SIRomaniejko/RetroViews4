@@ -32,7 +32,26 @@ nav ul .lupa{
     position: relative;
     bottom: 12%;
 }
-
+button.login{
+    background-color: green;
+    margin-left: 33%;
+    width: 35%;
+}
+button.signin{
+    background-color: green;
+    margin-left: 33%;
+    width: 35%;
+}
 li{
     list-style-type: none;
+}
+p.help{
+    margin-left: 87%;
+    position: absolute;
+}
+div.data{
+    margin-top: 45%;
+}
+div.content{
+    width: 100%;
 }
