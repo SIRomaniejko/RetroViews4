@@ -37,7 +37,17 @@ button.login{
     margin-left: 33%;
     width: 35%;
 }
+button.login:hover{
+    background-color: rgb(1, 95, 1);
+    margin-left: 33%;
+    width: 35%;
+}
 button.signin{
+    background-color: green;
+    margin-left: 33%;
+    width: 35%;
+}
+button.signin:hover{
     background-color: green;
     margin-left: 33%;
     width: 35%;
