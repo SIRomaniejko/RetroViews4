@@ -40,7 +40,9 @@
                     <img src="images/bell_icon.png" alt="">
                 </li>
                 <li class="busqueda">
-                    <input type="text" placeholder="  búsqueda">
+                    <form action="busqueda.html">
+                        <input type="text" placeholder="  búsqueda">
+                    </form>
                     <button><img src="images/equalizer_icon.png" alt=""></button>
                 </li>
                 <li>
@@ -52,9 +54,39 @@
             </ul>
         </ul>
         <div class="busqueda busquedaMobil hidden">
-            <button id="busquedaReturn"><img src="images/arrow-left.png" alt=""></button>
-            <input type="text" placeholder="  búsqueda">
-            <button><img src="images/equalizer_icon.png" alt=""></button>
+            <form action="busqueda.html">
+                <button id="busquedaReturn" type="button"><img src="images/arrow-left.png" alt=""></button>
+                <input type="text" placeholder="  búsqueda">
+                <button type="button"><img src="images/equalizer_icon.png" alt=""></button>
+                <div class="filters mobil">
+                        <div class="selects">
+                            <select name="" id="">
+                                <option value="">Año</option>
+                                <option value="">2019</option>
+                                <option value="">2018</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Género</option>
+                                <option value="">Acción</option>
+                                <option value="">Terror</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" placeholder="Director">
+                            <input type="text" placeholder="Actor">
+                        </div>
+                        <div class="radioFiltro">
+                            <div class="serieFiltro">
+                                <p>Series</p>
+                                <input type="radio" name="tipoContenido">
+                            </div>
+                            <div class="serieFiltro">
+                                <p>Películas</p>
+                                <input type="radio" name="tipoContenido">
+                            </div>
+                        </div>
+                </div>
+            </form>
         </div>
     </nav>
 
