@@ -33,30 +33,11 @@ nav ul .lupa{
 }
 
 .logo{
-    height: 150px;
+    height: 90px;
     position: relative;
     bottom: 12%;
 }
-button.login{
-    background-color: green;
-    margin-left: 33%;
-    width: 35%;
-}
-button.login:hover{
-    background-color: rgb(1, 95, 1);
-    margin-left: 33%;
-    width: 35%;
-}
-button.signin{
-    background-color: green;
-    margin-left: 33%;
-    width: 35%;
-}
-button.signin:hover{
-    background-color: green;
-    margin-left: 33%;
-    width: 35%;
-}
+
 li{
     list-style-type: none;
 }
@@ -294,11 +275,11 @@ li{
     position: relative;
     left: 25px;
     margin: auto;
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 30px solid #9F2C75;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #9F2C75;
 }
 
 .notification-body{
