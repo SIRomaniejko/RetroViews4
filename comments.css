@@ -7,6 +7,8 @@
 .comment{
 	width: 100%;
 	height: 100%;
+	margin-top: 5px;
+
 }
 .nombre{
 	font-size: 25px;
@@ -27,3 +29,32 @@ p, h4{
 .like{
 	background-color: #DBFFDA;
 }
+
+/* .dislike .nombre button{
+	background-color: #FFDCDC;
+	height: 30px;
+	border: 0px;
+	margin-left: 249px;
+	border-radius: 4px;
+    position: absolute;
+}
+.like .nombre button{
+	background-color: #DBFFDA;
+	height: 30px;
+	border: 0px;
+	margin-left: 249px;
+	border-radius: 4px;
+    position: absolute;
+} */
+
+.animarElem{
+	animation: animarElem 1s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes animarElem{
+	25%{transform: translateY(2px);opacity: 1; }
+	50%{transform: translateY(-2px);opacity: 1; }
+	75%{transform: translateY(2px);opacity: 1; }
+	100%{transform: translateY(-2px);opacity: 1; }
+} 
