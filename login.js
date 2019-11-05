@@ -1,19 +1,23 @@
-document.getElementById('myBtn').addEventListener('click', login);
+let boton = document.getElementsByClassName("botonConfirmar")[0];
+boton.addEventListener("click", comprobarCampos);
 
-let user = 'usuario@gmail.com';
-let pass = 123456;
-document.getElementById('error').style = "display : none";
+let inputs = document.getElementsByClassName("inputLogeo");
+let labels = document.getElementsByTagName("label");
 
-function login(){
-    if(!(user==document.getElementById('correo').value) &&!(pass==document.getElementById('clave').value)){
-        document.getElementById('correo').style = "border: 2px solid red";
-        document.getElementById('clave').style = "border: 2px solid red";
-        document.getElementById('error').style = "display : block;margin-left:3%;color:red;";   
+function comprobarCampos(){
+    for (let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value == ""){
+            inputs[i].classList.add("inputError");
+            let v = labels[i].textContent;
+            v = v.split(" ")[0];
+            let mensajeErrorActual =  " Error: Campo incompleto";
+            mensajeErrorActual = " -" + mensajeErrorActual;
+            labels[i].innerHTML = v+ mensajeErrorActual;
+            labels[i].classList.add("mensajeError");
+        }
     }
-    else{
-        document.getElementById('correo').style = "border: 1px solid green";
-        document.getElementById('clave').style = "border: 1px solid green";
-        document.getElementById('error').style = "display : none;"; 
+    if(document.getElementsByClassName("inputError").length == 0){
+        console.log("ninguno vacio");
     }
 }
 

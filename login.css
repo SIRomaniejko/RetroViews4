@@ -66,6 +66,19 @@ label{
 	width: 80px;
 	height: 80px;
 }
+.inputError{
+	background-color: #FFDCDC;
+	animation: animarInput 0.5s;
+}
+@keyframes animarInput{
+	25%{transform: translateX(10px);}
+	50%{transform: translateX(-20px);}
+	75%{transform: translateX(30px);}
+	25%{transform: translateX(-30px);}
+}
+.mensajeError{
+	color: red;
+}
 @media screen and (min-width: 900px){
 	.contenedorLogin{
 		width: 40%;
