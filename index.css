@@ -1,0 +1,75 @@
+.scroll-movies{
+    width: 100%;
+    height: 140px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+
+.scroll-movies::-webkit-scrollbar{
+    width: 0;
+}
+
+.container-movies{
+    position: relative;
+    height: inherit;
+    width: max-content;
+}
+
+.container-movies img{
+    width: 90px;
+    margin-left: 5px;
+    height: inherit;
+}
+
+.promocion img{
+    width: 252px;
+}
+
+.sectorPeliculas h3{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.scrollTop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 1050px){
+    .scroll-movies{
+        
+        height: 200px;
+    }
+
+    .sectorPeliculas h3{
+        height: 32px;
+        margin-top: 0;
+        font-size: 32px;
+    }
+
+    .scrollTop{
+        height: 34px;
+    }
+
+    .container-movies img{
+        margin-left: 10px;
+        width: 140px;
+    }
+
+    .promocion img{
+        width: 540px;
+    }
+    
+    .promocion{
+        height: 300px;
+    }
+
+    .promocion .scroll-movies{
+        height: 300px;
+    }
+    
+}

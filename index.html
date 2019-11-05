@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <nav>
+                <ul class="nav-mobil">
+                    <li id="hambaga" class="mobil">
+                        <img src="images/Hamburger_icon.png" alt="">
+                    </li>
+                    <li>
+                        <img class="logo" src="images/logo.png" alt="">
+                    </li>
+                    <ul class="computer extraOptionsNav">
+                            <li class="computer iconAndText">
+                                <img src="images/movie_icon.png" alt="">
+                                <p>Películas</p>
+                            </li>
+                            <li class="computer iconAndText">
+                                <img src="images/series_icon.png" alt="">
+                                <p>Series</p>
+                            </li>
+                            <li class="computer iconAndText">
+                                <img src="images/bookmark_icon.png" alt="">
+                                <p>Mi Lista</p>
+                            </li>
+                    </ul>
+                    <li class="mobil">
+                        <img src="images/bell_icon.png" alt="">
+                        <img class="lupa" src="images/search_icon.png" alt="">
+                    </li>
+                    <ul class="computer extraOptionsNav optionsNavRight">
+                        <li>
+                            <img src="images/bell_icon.png" alt="">
+                        </li>
+                        <li class="busqueda">
+                            <form action="busqueda.html">
+                                <input type="text" placeholder="  búsqueda">
+                            </form>
+                            <button><img src="images/equalizer_icon.png" alt=""></button>
+                        </li>
+                        <li>
+                            <li class="computer iconAndText">
+                                <img src="images/profile_icon.png" alt="">
+                                <p>Mi Perfil</p>
+                            </li>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="busqueda busquedaMobil hidden">
+                    <form action="busqueda.html">
+                        <button id="busquedaReturn" type="button"><img src="images/arrow-left.png" alt=""></button>
+                        <input type="text" placeholder="  búsqueda">
+                        <button type="button"><img src="images/equalizer_icon.png" alt=""></button>
+                        <div class="contenedorFiltro mobil">
+                            <div class="flexTop">
+                                <div class="selects filterPart">
+                                    <select name="" id="">
+                                        <option value="">Año</option>
+                                        <option value="">2019</option>
+                                        <option value="">2018</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Género</option>
+                                        <option value="">Acción</option>
+                                        <option value="">Terror</option>
+                                    </select>
+                                </div>
+                                <div class="inputs filterPart">
+                                    <input type="text" placeholder="Director">
+                                    <input type="text" placeholder="Actor">
+                                </div>
+                            </div>
+                            <div class="radioFiltro">
+                                <div class="serieFiltro">
+                                    <p>Series</p>
+                                    <input type="radio" name="tipoContenido">
+                                </div>
+                                <div class="serieFiltro">
+                                    <p>Películas</p>
+                                    <input type="radio" name="tipoContenido">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="submitOculto">
+                    </form>
+                </div>
+            </nav>
+        
+            <ul class="sidebar">
+                <p id="nombreSitio">RetroViews4</p>
+                <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
+                <div class="sidebarButtons">
+                    <div class="flexButtonsSidebar">
+                        <li class="iconAndText">
+                            <img src="images/movie_icon.png" alt="">
+                            <p>Películas</p>
+                        </li>
+                        <li class="iconAndText">
+                            <img src="images/series_icon.png" alt="">
+                            <p>Series</p>
+                        </li>
+                        <li class="iconAndText">
+                            <img src="images/bookmark_icon.png" alt="">
+                            <p>Mi Lista</p>
+                        </li>
+                    </div>
+                    <div class="flexButtonsSidebar">
+                        <li class="iconAndText">
+                            <img src="images/profile_icon.png" alt="">
+                            <p>Mi Perfil</p>
+                        </li>
+                        <li class="iconAndText">
+                            <img src="images/help_icon.png" alt="">
+                            <p>Soporte</p>
+                        </li>
+                        <li class="iconAndText">
+                            <img src="images/logOut_icon.png" alt="">
+                            <p>Salir</p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+            <script src="main.js"></script>
+
+
+    <div class="sectorPeliculas">
+        <div class="scrollTop">
+            <h3>Viernes de peliculas</h3>
+            <div class="computer">
+                <button class="js-scrollLeft"><img src="images/arrow-left.png" alt=""></button>
+                <button class="js-scrollRight"><img src="images/arrow-right.png" alt=""></button>
+            </div>
+        </div>
+        <div class="scroll-movies promocion">
+            <div class="container-movies ">
+                <img src="images/movie-posters/imgPromocion.png" alt="">
+                <img src="images/movie-posters/starwars.jpg" alt="">
+                <img src="images/movie-posters/godzilla.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sectorPeliculas">
+        <div class="scrollTop">
+                <h3>Accion</h3>
+                <div class="computer">
+                    <button class="js-scrollLeft"><img src="images/arrow-left.png" alt=""></button>
+                    <button class="js-scrollRight"><img src="images/arrow-right.png" alt=""></button>
+                </div>
+        </div>
+        <div class="scroll-movies">
+            <div class="container-movies">
+                <img src="images/movie-posters/pulpfiction.jpg" alt="">
+                <img src="images/movie-posters/moonlight.jpg" alt="">
+                <img src="images/movie-posters/inglorious.jpg" alt="">
+                <img src="images/movie-posters/blade.jpg" alt="">
+                <img src="images/movie-posters/joker.jpg" alt="">
+                <img src="images/movie-posters/deadpool.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
