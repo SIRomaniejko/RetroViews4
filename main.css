@@ -132,7 +132,7 @@ li{
 }
 
 .extraOptionsNav{
-    width: 35%;
+    width: 41%;
 }
 
 .optionsNavRight{
@@ -160,9 +160,7 @@ li{
 }
 
 
-.hidden{
-    display: none;
-}
+
 
 .busqueda input{
     float: left;
@@ -257,6 +255,79 @@ li{
     width: 30px;
 }
 
+#notificacionContainer{
+    position: fixed;
+    left: 90%;
+    width: 0;
+    height: 0;
+}
+
+#notification{
+    height: 400px;
+    width: 200px;
+    position: relative;
+    top: 70px;
+    right: 140px;
+}
+
+.triangle-up {
+    position: relative;
+    left: 25px;
+    margin: auto;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid #9F2C75;
+}
+
+.notification-body{
+    background-color: #9F2C75;
+    height: 370px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.notification-body h6{
+    text-align: center;
+
+}
+
+.notification-body div{
+    float: left;
+    margin-top: 15px;
+}
+.notification-body div img{
+    margin-left: 5%;
+    margin-top: 3px;
+    width: 40%;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.notification-body div p{
+    float: left;
+    margin-left: 10px;
+    width: 40%;
+    margin-top: 3px;
+    line-height: 13px;
+    font-size: 10px;
+}
+
+.inputFiltro{
+    border: solid 1px black !important;
+}
+
+.filtroPC{
+    height: 130px;
+}
+
+.filtroPC p{
+    margin-top: 0;
+}
 
 @keyframes open{
     0%{
@@ -284,4 +355,16 @@ li{
     .mobil{
         display: none;
     }
+
+    #notificacionContainer{
+        left: 58.7%;
+    }
+
+    .triangle-up{
+        left: 0;
+    }
+}
+
+.hidden{
+    display: none;
 }
