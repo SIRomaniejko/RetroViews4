@@ -61,6 +61,10 @@ li{
     margin-left: 10px;
 }
 
+.iconAndText{
+    width: 160px;
+}
+
 .sidebar li p{
     margin-top: 5px;
 }
@@ -199,6 +203,58 @@ li{
     margin-top: 2px;
     height: 16px;
     width: 19px;
+}
+
+.contenedorFiltro{
+    position: absolute;
+    left: 0;
+    top: 66px;
+    height: 100px;
+    width: 100%;
+    background-color: #91136E;
+}
+
+.contenedorFiltro input{
+    margin: 0;
+    height: 19px;
+}
+
+.contenedorFiltro .flexTop{
+    height: 60px;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filterPart{
+    overflow: hidden;
+    width: 45%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.submitOculto{
+    visibility: hidden;
+}
+
+.radioFiltro{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.serieFiltro *{
+    width: fit-content;
+    float: left;
+}
+
+.serieFiltro input{
+    width: 30px;
 }
 
 
