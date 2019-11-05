@@ -8,6 +8,10 @@ nav{
     height: 66px;
 }
 
+.computer{
+    display: none;
+}
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -35,4 +39,168 @@ nav ul .lupa{
 
 li{
     list-style-type: none;
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -231px; 
+    z-index: 10;
+    width: 231px;
+    background-color: #A72D85;
+}
+
+.iconAndText *{
+    display: inline-block;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.sidebar li p{
+    margin-top: 5px;
+}
+
+.sidebar li img{
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar li{
+    height: 35px;
+    position: relative;
+    left: 5%;
+}
+
+.sidebarButtons{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    z-index: 10;
+    width: 231px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexButtonsSidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin: 10px 0;
+}
+
+#cerrarSidebar{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#nombreSitio{
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.abierto{
+    animation: open 0.6s ease-in;
+    animation-fill-mode: both;
+}
+
+.cerrado{
+    animation: closed 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.extraOptionsNav{
+    width: 35%;
+}
+
+.optionsNavRight{
+    width: 45%;
+}
+
+.extraOptionsNav p{  
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 22px;
+}
+.extraOptionsNav li img{
+    margin-left: 0;
+}
+
+.busqueda{
+    width: 55%;
+}
+
+.busqueda input{
+    float: left;
+    display: block;
+    margin: 0;
+    margin-top: 15px;
+    border: solid 1px black;
+    border-right: none;
+    height: 30px;
+    width: 85%;
+}
+
+.busqueda button{
+    display: block;
+    margin: 0;
+    margin-top: 15px;
+    height: 32px;
+    width: 32px;
+    border: solid 1px black;
+    border-left: none;
+    background-color: white;
+}
+
+.busqueda img{
+    margin-top: 2px;
+    height: 12px;
+    width: 18px;
+}
+
+
+@keyframes open{
+    0%{
+        left: -231px; 
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes closed{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -231px; 
+    }
+}
+
+
+@media(min-width: 990px){
+    .computer{
+        display: inherit;
+    }
+    .mobil{
+        display: none;
+    }
 }
