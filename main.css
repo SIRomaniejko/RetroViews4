@@ -6,6 +6,11 @@ nav{
     background-color: #91136e;
     width: 100%;
     height: 66px;
+    margin-bottom: 20px;
+}
+
+.computer{
+    display: none;
 }
 
 nav ul{
@@ -16,7 +21,7 @@ nav ul{
     padding: 0 10px;
 }
 
-nav ul img{
+nav > ul li img{
     height: 40px;
     position: relative;
     bottom: -13.64%;
@@ -55,13 +60,248 @@ button.signin:hover{
 li{
     list-style-type: none;
 }
-p.help{
-    margin-left: 87%;
+
+.sidebar{
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -231px; 
+    z-index: 10;
+    width: 231px;
+    background-color: #A72D85;
 }
-div.data{
-    margin-top: 45%;
+
+.iconAndText *{
+    display: inline-block;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    margin-left: 10px;
 }
-div.content{
+
+.iconAndText{
+    width: 160px;
+}
+
+.sidebar li p{
+    margin-top: 5px;
+}
+
+.sidebar li img{
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar li{
+    height: 35px;
+    position: relative;
+    left: 5%;
+}
+
+.sidebarButtons{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    z-index: 10;
+    width: 231px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexButtonsSidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin: 10px 0;
+}
+
+#cerrarSidebar{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#nombreSitio{
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.abierto{
+    animation: open 0.6s ease-in;
+    animation-fill-mode: both;
+}
+
+.cerrado{
+    animation: closed 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.extraOptionsNav{
+    width: 35%;
+}
+
+.optionsNavRight{
+    width: 45%;
+}
+
+.extraOptionsNav p{  
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 22px;
+}
+.extraOptionsNav li img{
+    margin-left: 0;
+}
+
+.busqueda{
+    overflow: hidden;
+    width: 55%;
+}
+
+.busquedaMobil{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.hidden{
+    display: none;
+}
+
+.busqueda input{
+    float: left;
+    display: block;
+    margin: 0;
+    margin-top: 15px;
+    border: solid 1px black;
+    border-right: none;
+    height: 30px;
+    width: 85%;
+}
+
+.busquedaMobil input{
+    width: 75%;
+    border-left: none;
+}
+
+
+
+.busqueda button{
+    float: left;
+    display: block;
+    margin: 0;
+    margin-top: 15px;
+    height: 32px;
+    width: 32px;
+    border: solid 1px black;
+    border-left: none;
+    background-color: white;
+}
+
+.busquedaMobil button:first-child{
+    border: solid 1px black;
+    border-right: none !important;
+}
+
+.busqueda img{
+    margin-top: 2px;
+    height: 16px;
+    width: 19px;
+}
+
+.contenedorFiltro{
+    position: absolute;
+    left: 0;
+    top: 66px;
+    height: 100px;
     width: 100%;
+    background-color: #91136E;
+}
+
+.contenedorFiltro input{
+    margin: 0;
+    height: 19px;
+}
+
+.contenedorFiltro .flexTop{
+    height: 60px;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filterPart{
+    overflow: hidden;
+    width: 45%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.submitOculto{
+    visibility: hidden;
+}
+
+.radioFiltro{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.serieFiltro *{
+    width: fit-content;
+    float: left;
+}
+
+.serieFiltro input{
+    width: 30px;
+}
+
+
+@keyframes open{
+    0%{
+        left: -231px; 
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes closed{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -231px; 
+    }
+}
+
+
+@media(min-width: 1050px){
+    .computer{
+        display: inherit;
+    }
+    .mobil{
+        display: none;
+    }
 }
