@@ -15,40 +15,102 @@
                 <img src="images/Hamburger_icon.png" alt="">
             </li>
             <li>
-                <img class="logo" src="images/logo.png" alt="">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
             </li>
             <ul class="computer extraOptionsNav">
                     <li class="computer iconAndText">
-                        <img src="images/movie_icon.png" alt="">
-                        <p>Películas</p>
+                        <a href="peliculas.html">
+                            <img src="images/movie_icon.png" alt="">
+                            <p>Películas</p>
+                        </a>
                     </li>
                     <li class="computer iconAndText">
-                        <img src="images/series_icon.png" alt="">
-                        <p>Series</p>
+                        <a href="series.html">
+                            <img src="images/series_icon.png" alt="">
+                            <p>Series</p>
+                        </a>
                     </li>
                     <li class="computer iconAndText">
-                        <img src="images/bookmark_icon.png" alt="">
-                        <p>Mi Lista</p>
+                        <a href="lista.html">
+                            <img src="images/bookmark_icon.png" alt="">
+                            <p>Mi Lista</p>
+                        </a>
                     </li>
             </ul>
             <li class="mobil">
-                <img src="images/bell_icon.png" alt="">
+                <img id="js-bell-mobile"src="images/bell_icon.png" alt="">
                 <img class="lupa" src="images/search_icon.png" alt="">
             </li>
+            <div id="notificacionContainer" class="hidden">
+                <div id="notification">
+                    <div class="triangle-up"></div>
+                    <div class="notification-body">
+                        <div>
+                            <h6>Nuevo Episodio de The Game</h6>
+                            <img src="images/reservoirdogs.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <h6>Nuevo Episodio de The Game</h6>
+                            <img src="images/reservoirdogs.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <h6>Nuevo Episodio de The Game</h6>
+                            <img src="images/reservoirdogs.jpg" alt="">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="computer extraOptionsNav optionsNavRight">
                 <li>
-                    <img src="images/bell_icon.png" alt="">
+                    <img class="js-bell" src="images/bell_icon.png" alt="">
                 </li>
                 <li class="busqueda">
                     <form action="busqueda.html">
                         <input type="text" placeholder="  búsqueda">
+                        <div class="contenedorFiltro filtroPC computer hidden">
+                            <div class="flexTop">
+                                <div class="selects filterPart">
+                                    <select name="" id="">
+                                        <option value="">Año</option>
+                                        <option value="">2019</option>
+                                        <option value="">2018</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Género</option>
+                                        <option value="">Acción</option>
+                                        <option value="">Terror</option>
+                                    </select>
+                                </div>
+                                <div class="inputs filterPart">
+                                    <input class="inputFiltro" type="text" placeholder="Director">
+                                    <input class="inputFiltro" type="text" placeholder="Actor">
+                                </div>
+                            </div>
+                            <div class="radioFiltro">
+                                <div class="serieFiltro">
+                                    <p>Series</p>
+                                    <input type="radio" name="tipoContenido">
+                                </div>
+                                <div class="serieFiltro">
+                                    <p>Películas</p>
+                                    <input type="radio" name="tipoContenido">
+                                </div>
+                            </div>
+                        </div>
                     </form>
-                    <button><img src="images/equalizer_icon.png" alt=""></button>
+                    <button class="js-openFilters" type="button"><img src="images/equalizer_icon.png" alt=""></button>
                 </li>
                 <li>
                     <li class="computer iconAndText">
-                        <img src="images/profile_icon.png" alt="">
-                        <p>Mi Perfil</p>
+                        <a href="configuracion.html">
+                            <img src="images/profile_icon.png" alt="">
+                            <p>Mi Perfil</p>
+                        </a>
                     </li>
                 </li>
             </ul>
@@ -57,8 +119,8 @@
             <form action="busqueda.html">
                 <button id="busquedaReturn" type="button"><img src="images/arrow-left.png" alt=""></button>
                 <input type="text" placeholder="  búsqueda">
-                <button type="button"><img src="images/equalizer_icon.png" alt=""></button>
-                <div class="contenedorFiltro mobil">
+                <button class="js-openFilters" type="button"><img src="images/equalizer_icon.png" alt=""></button>
+                <div class="contenedorFiltro mobil hidden">
                     <div class="flexTop">
                         <div class="selects filterPart">
                             <select name="" id="">
@@ -73,8 +135,8 @@
                             </select>
                         </div>
                         <div class="inputs filterPart">
-                            <input type="text" placeholder="Director">
-                            <input type="text" placeholder="Actor">
+                            <input class="inputFiltro" type="text" placeholder="Director">
+                            <input class="inputFiltro" type="text" placeholder="Actor">
                         </div>
                     </div>
                     <div class="radioFiltro">
@@ -99,30 +161,36 @@
         <div class="sidebarButtons">
             <div class="flexButtonsSidebar">
                 <li class="iconAndText">
-                    <img src="images/movie_icon.png" alt="">
-                    <p>Películas</p>
+                    <a href="peliculas.html">
+                        <img src="images/movie_icon.png" alt="">
+                        <p>Películas</p>
+                    </a>
                 </li>
                 <li class="iconAndText">
-                    <img src="images/series_icon.png" alt="">
-                    <p>Series</p>
+                    <a href="series.html">
+                        <img src="images/series_icon.png" alt="">
+                        <p>Series</p>
+                    </a>
                 </li>
                 <li class="iconAndText">
-                    <img src="images/bookmark_icon.png" alt="">
-                    <p>Mi Lista</p>
+                    <a href="lista.html">
+                        <img src="images/bookmark_icon.png" alt="">
+                        <p>Mi Lista</p>
+                    </a>
                 </li>
             </div>
             <div class="flexButtonsSidebar">
                 <li class="iconAndText">
-                    <img src="images/profile_icon.png" alt="">
-                    <p>Mi Perfil</p>
+                    <a href="configuracion.html">
+                        <img src="images/profile_icon.png" alt="">
+                        <p>Mi Perfil</p>
+                    </a>
                 </li>
                 <li class="iconAndText">
-                    <img src="images/help_icon.png" alt="">
-                    <p>Soporte</p>
-                </li>
-                <li class="iconAndText">
-                    <img src="images/logOut_icon.png" alt="">
-                    <p>Salir</p>
+                    <a href="faq.html">
+                        <img src="images/help_icon.png" alt="">
+                        <p>Soporte</p>
+                    </a>
                 </li>
             </div>
         </div>
