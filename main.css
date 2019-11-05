@@ -20,7 +20,7 @@ nav ul{
     padding: 0 10px;
 }
 
-nav ul img{
+nav > ul li img{
     height: 40px;
     position: relative;
     bottom: -13.64%;
@@ -145,7 +145,19 @@ li{
 }
 
 .busqueda{
+    overflow: hidden;
     width: 55%;
+}
+
+.busquedaMobil{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.hidden{
+    display: none;
 }
 
 .busqueda input{
@@ -159,7 +171,15 @@ li{
     width: 85%;
 }
 
+.busquedaMobil input{
+    width: 75%;
+    border-left: none;
+}
+
+
+
 .busqueda button{
+    float: left;
     display: block;
     margin: 0;
     margin-top: 15px;
@@ -170,10 +190,15 @@ li{
     background-color: white;
 }
 
+.busquedaMobil button:first-child{
+    border: solid 1px black;
+    border-right: none !important;
+}
+
 .busqueda img{
     margin-top: 2px;
-    height: 12px;
-    width: 18px;
+    height: 16px;
+    width: 19px;
 }
 
 
