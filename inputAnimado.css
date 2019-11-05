@@ -1,0 +1,16 @@
+input{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.inputError{
+	background-color: #FFDCDC;
+}
+.animarDiv{
+	animation: alterarDiv 0.5s;
+}
+@keyframes alterarDiv{
+	25%{transform: translate(2px, 0);}
+	50%{transform: translate(-4px, 0);}
+	75%{transform: translate(6px, 0);}
+	100%{transform: translate(-6px, 0);}
+}
