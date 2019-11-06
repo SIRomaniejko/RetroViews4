@@ -32,6 +32,9 @@ p, h4{
 	background-color: #DBFFDA;
 }
 
+.hidden{
+	display: none;
+}
 /* .dislike .nombre button{
 	background-color: #FFDCDC;
 	height: 30px;
@@ -60,3 +63,69 @@ p, h4{
 	75%{transform: translateY(2px);opacity: 1; }
 	100%{transform: translateY(-2px);opacity: 1; }
 } 
+
+.agregarComentario{
+	width: 100%;
+	height: 50px;
+	background-color: #91136E;
+	border-radius: 2px;
+	
+}
+.addComentario{
+	border: none;
+	border-bottom: 2px black solid;
+	padding: 0 0 0 0;
+	margin: 10px 0 0 10px;
+	width: 80%;
+	height: 30px;
+	background-color: #91136E;
+}
+.agregarComentario img{
+	width: 37px;
+	height: 37px;
+	float: right;
+	margin: 7.5px 5px 0 0;
+}
+.lineaDivisoriaAddComentario{
+
+	height: 2px;
+	width: 100%;
+}
+@media screen and(min-width : 700px){
+	.agregarComentario img{
+		width: 3px;
+		margin: 7.5px 5px 0 0;
+	}
+}
+
+.giganteBackground{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}
+.pulgares{
+	width: 50%;
+	height: 100px;;
+	background-color: #91136e;
+	position: absolute;
+	top:50%;
+	left:25%;
+}
+.float-left{
+	float: left;
+}
+.float-left img{
+	width: 35px;
+	margin-left: 35px;
+}
+.float-right{
+	float: right;
+}
+.float-right img{
+	width: 35px;
+	margin-right: 35px;
+}
+.pulgares p{
+	text-align: center;
+	margin: 10px 0 10px 0;
+}

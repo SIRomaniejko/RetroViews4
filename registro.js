@@ -3,8 +3,9 @@ boton.addEventListener("click", comprobarCampos);
 
 let inputs = document.getElementsByClassName("inputLogeo");
 let labels = document.getElementsByTagName("label");
-let yaDemostrado = false;
+let yaDemostrado = 0
 function comprobarCampos(){
+    let algoMal = false;
     for (let i = 0; i < inputs.length; i++) {
         if(inputs[i].value == ""){
             inputs[i].classList.add("inputError");
@@ -19,9 +20,8 @@ function comprobarCampos(){
         }
     }
     if(document.getElementsByClassName("inputError").length == 0 || yaDemostrado == true){
-        document.location.href = "index.html";
+        document.location.href = "cardPrice.html";
     }
-    
     if(algoMal){
         yaDemostrado = true;
     }

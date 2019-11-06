@@ -1,12 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 nav{
     background-color: #91136e;
     width: 100%;
     height: 66px;
     margin-bottom: 20px;
+}
+
+.computer{
+    display: none;
 }
 
 .computer{
@@ -162,7 +167,6 @@ li{
 
 
 
-
 .busqueda input{
     float: left;
     display: block;
@@ -257,7 +261,8 @@ li{
 }
 
 #notificacionContainer{
-    position: fixed;
+    z-index: 23;
+    position: absolute;
     left: 90%;
     width: 0;
     height: 0;
@@ -267,6 +272,7 @@ li{
     height: 400px;
     width: 200px;
     position: relative;
+    z-index: 10;
     top: 70px;
     right: 140px;
 }
@@ -323,6 +329,7 @@ a{
 }
 
 .filtroPC{
+    z-index: 22;
     height: 130px;
 }
 
@@ -358,6 +365,7 @@ a{
     }
 
     #notificacionContainer{
+        z-index: 27;
         left: 58.7%;
     }
 
