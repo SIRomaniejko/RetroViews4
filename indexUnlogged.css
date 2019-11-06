@@ -11,9 +11,9 @@
 }
 
 .container-movies{
-    position: relative;
-    height: inherit;
-    width: max-content;
+    margin: auto;
+    width: 95%;
+    padding: auto;
 }
 
 .container-movies img{
@@ -22,21 +22,24 @@
     margin-left: 5px;
 }
 
-.promocion img{
-    width: 252px;
-    height: 132px;
+#acceso-button{
+    margin-top: 15px;
+    height: 35px;
+    width: 150px;
+    border: solid 1px black;
+    background-color: lawngreen;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.sectorPeliculas h3{
-    height: 20px;
-    margin-left: 10px;
+#acceso-button img{
+    float: left;
+    height: 25px;
 }
 
-.scrollTop{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#acceso-button p{
+    display: inline-block;
+    font-size: 24px;
 }
 
 
