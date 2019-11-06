@@ -38,7 +38,7 @@
 	font-weight: bold;
 	margin-left: 3px;
 }
-.info{
+.informacion{
 	float:right;
 }
 .descripcion{
@@ -51,6 +51,9 @@
 	width: 98%;
 	margin: auto;
 	margin-top: 3px;
+}
+.container{
+	width: 100%;
 }
 .botonera{
 	width: 90%;
@@ -66,6 +69,7 @@
 
 .episodio{
 	width: auto;
+	display: flow-root;
 	margin: 5px 5px 0 5px;
 }
 .episodio img{
@@ -94,7 +98,7 @@ p{
 span{
 	display: inline;
 }
-.info span{
+.informacion span{
 	padding-right: 5px;
 }
 
@@ -122,10 +126,10 @@ span{
 	.titulo{
 		font-size: 30px;
 	}
-	.info{
+	.informacion{
 		margin-top: 7px;
 	}
-	.info span{
+	.informacion span{
 		padding-left: 10px;
 	}
 	.distancia{
@@ -140,6 +144,13 @@ span{
 	}
 	.botonera{
 		margin-bottom: 15px;
+	}
+	.botonera p span{
+		margin-bottom: 15px;
+		margin: 30px;
+	}
+	.botonera p {
+		margin-top: 12px;
 	}
 	.botonera span:hover{
 		border-bottom: #ACD439 2px solid;
