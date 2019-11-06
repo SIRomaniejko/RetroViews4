@@ -1,0 +1,41 @@
+body,p{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.contenedorFaq{
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.pregunta{
+	font-size: 20px;
+	width: 90%;
+	margin: auto;
+}
+.respuesta{
+	font-size: 16px;
+	width: 90%;
+	margin: auto;
+	color: #A4A3A3;
+}
+.lineaFaq{
+	height: 2px;
+	width: 90%;
+	margin: auto;
+	background-color: #000000;
+}
+@media screen and (min-width: 700px) {
+	.contenedorFaq{
+		width: 45%;
+		height: 20%;
+		float: left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.contenedorMayorFaq{
+		margin: auto;
+		width: 90%;
+		height: 600px;
+	}
+}

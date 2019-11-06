@@ -17,7 +17,7 @@ function comprobarCampos(){
         }
     }
     if(document.getElementsByClassName("inputError").length == 0){
-        document.location.href = "index.html";
+        document.location.href = "cardPrice.html";
     }
 }
 

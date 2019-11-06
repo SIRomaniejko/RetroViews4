@@ -14,6 +14,10 @@ nav{
     display: none;
 }
 
+.computer{
+    display: none;
+}
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -160,7 +164,6 @@ li{
     margin: auto;
 
 }
-
 
 
 
