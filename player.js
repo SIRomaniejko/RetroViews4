@@ -21,3 +21,14 @@ function mostrarComentarios(){
     document.getElementById('episodios').style = "display:none";
 
 }
+
+let avion = document.getElementById("avion");
+console.log(avion);
+
+avion.addEventListener("click",mostrarPulgares);
+function mostrarPulgares(){
+    console.log("ahhh");
+    document.getElementById("pulgares").classList.toggle("hidden");
+}
+document.getElementById("imglike").addEventListener("click",mostrarPulgares);
+document.getElementById("imgdislike").addEventListener("click",mostrarPulgares);
