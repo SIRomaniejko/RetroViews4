@@ -1,0 +1,213 @@
+#contenedorJuego{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: all;
+}
+#nubes{
+    position: absolute;
+    top: 0;
+    z-index: -50;
+    height: 300px;
+    width: 100%;
+    background-image: url('images/world/background/Clouds_3.png');
+    animation: movimientoNubes 30s linear infinite;
+}
+@keyframes movimientoNubes{
+    100%{
+        background-position-x: -800px;
+    }
+}
+#montanias{
+    position: absolute;
+    bottom: 0;
+    z-index: -40;
+    height: 500px;
+    width: 100%;
+    background-image: url('images/world/background/montanias.png');
+    animation: movimientoMontanias 15s linear infinite;
+}
+@keyframes movimientoMontanias{
+    100%{
+        background-position-x: -1024px;
+    }
+}
+#pasto{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-image: url('images/world/background/pasto2.png');
+    animation: movimientoMontanias 0.1s linear infinite;
+}
+@keyframes movimientoPasto{
+    100%{
+        background-position-x: -455px;
+    }
+}
+#protagonista{
+    position: absolute;
+    z-index: 0;
+    height: 130px;
+    width: 94px;
+    overflow: visible;
+    left: 5px;
+    bottom: 0px;
+}
+.corriendo{
+    background-size: 940px 130px !important;
+    background: url('images/characters/main/running.png') left center;
+    animation: runningAnimation 0.3s steps(10) infinite;
+}
+@keyframes runningAnimation{
+    100%{
+        background-position: -940px;
+    }
+}
+.saltando{
+    background-size: 470px 130px !important;
+    background: url('images/characters/main/salto2.png') left center;
+    animation: jumpingFallingAnimation 0.5s steps(4);
+    animation-fill-mode: forwards;
+}
+.cayendo{
+    background-size: 470px 130px !important;
+    background: url('images/characters/main/fall2.png') left center;
+    animation: jumpingFallingAnimation 2s steps(4);
+    animation-fill-mode: forwards;
+}
+@keyframes jumpingFallingAnimation{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -376px;
+    }
+}
+
+.atacando{
+    width: 137px !important;
+    background: url('images/characters/main/Attack__005.png');
+    background-size: 137px 130px !important;
+}
+.proyectil{
+    position: absolute;
+    background-image: url('images/shuriken.png');
+    z-index: 20;
+    width: 25px;
+    height: 25px;
+    left: 800px;
+    bottom: 300px;
+    animation: proyectileSpin 1s steps(6) infinite;
+}
+@keyframes proyectileSpin{
+    100%{
+        background-position-x: -150px;
+    }
+}
+
+.hitbox{
+    background-color: red;
+    position: absolute;
+}
+
+.ocultado{
+    display: none;
+}
+
+.muerto{
+    height: 200px !important;
+    width: 145px !important;
+    background-size: 145px 200px !important;
+    background: url('images/characters/main/dead.png');
+    animation: die ease-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes die{
+    100%{
+        transform: translate(-200px, 50px);
+    }
+}
+
+
+#killcam{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.5);
+    z-index: 1000;
+    font-size: 2rem;
+    pointer-events: visible;
+}
+
+#killcam div{
+    margin: 10% auto;
+    text-align: center;
+}
+
+#killcam button{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    z-index: 2000;
+}
+
+#score{
+    position: absolute;
+}
+
+#welcome{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(128, 255, 0, 0.548);
+}
+.expositor{
+    height: 130px;
+    width: 94px;
+    margin: auto;
+}
+
+.flexboxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.flexboxContainer img{
+    display: block;
+    margin: auto;
+}
+
+#welcome h1{
+    text-align: center;
+}
+#welcome p{
+    text-align: center;
+}
+
+#welcome button{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    z-index: 2000;
+    margin-top: 1%;
+}

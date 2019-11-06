@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="configuracion.css">
-	<link rel="stylesheet" href="main.css">
-	<title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mainJuego.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-		<nav>
+
+        <nav style="margin-bottom: 0">
                 <ul class="nav-mobil">
                     <li id="hambaga" class="mobil">
                         <img src="images/Hamburger_icon.png" alt="">
@@ -198,45 +199,49 @@
             </ul>
             <script src="navScript.js"></script>
 
-
-	<div class="contenedorConfiguracion">
-		<div class="tituloConfiguracion">
-			<p>Informacion</p>
-		</div>
-		<div class="lineaTituloConfiguracion"></div>
-		<div class="elementoConfiguracion">
-			<p>Nombre</p>
-			<input type="text" placeholder="Luciano">
-			<div class="lineaConfiguracion"></div>
-		</div>
-		<div class="elementoConfiguracion">
-			<p>Usuario</p>
-			<input type="text" placeholder="3erpierna">
-			<div class="lineaConfiguracion"></div>
-		</div>
-		<div class="elementoConfiguracion">
-			<p>Contraseña</p>
-			<input type="password" placeholder="********">
-			<div class="lineaConfiguracion"></div>
-		</div>
-		<div class="elementoConfiguracion">
-			<p>Mail</p>
-			<input type="text" placeholder="castrobigcock@gmail.uk">
-			<div class="lineaConfiguracion"></div>
-		</div>
-		<div class="tituloConfiguracion">
-			<p>Membresía</p>
-		</div>
-		<div class="lineaTituloConfiguracion"></div>
-		<div class="elementoConfiguracion">
-			<p>Básico</p>
-			<input type="text" placeholder="$$$" disabled>
-			<div class="lineaConfiguracion"></div>
-		</div>
-		<div class="elementoConfiguracion">
-			<!-- <p class="anchor">hola</p> -->
-			<a href="indexUnlogged.html" class="anchor">Desconectarse</a>
-		</div>
-	</div>
+    <div id="contenedorJuego">
+        <div id="welcome">
+            <button id="comienzoJuego">comenzar</button>
+            <div>
+                <h1>No se encontro lo que buscabas</h1>
+                <p>pero podés jugar a esto mientras tanto</p>
+                <div class="flexboxContainer">
+                    <div class="control">
+                        <img src="images/arrowdown.png" alt="">
+                        <div class="cayendo expositor"></div>
+                        <p>estando en el aire se <br>puede acelerar la caida</p>
+                    </div>
+                    <div class="control">
+                        <img src="images/keyup.png" alt="">
+                        <div class="saltando  expositor"></div>
+                        <p>este juego tiene doble salto<br>y al cortar un shuriken <br>se recupera un salto adicional</p>
+                    </div>
+                    <div class="control">
+                        <img src="images/spacebar.png" alt="">
+                        <div class="atacando expositor"></div>
+                        <p>cuando uno ataca hay un delay entre cada ataque a <br> menos que el ataque corte un shuriken <br> en ese caso se puede atacar de nuevo instantaneamente</p>
+                    </div>
+                    <div class="control">
+                        <img src="images/shuriken.png" alt="">
+                        <div class="muerto expositor"></div>
+                        <p>cuidado con los shurikens<br>si te golpean pierdes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="killcam" class="ocultado">
+            <div>moriste, intentar de nuevo?</div>
+            <button>Restart</button>
+        </div>
+        <div id="nubes"></div>
+        <div id="montanias"></div>
+        <div id="pasto"></div>
+        <div id="protagonista" class="corriendo"></div>
+        <div id="score">
+            <p>puntaje: <span id="js-score">0</span></p>
+            <p>combo: <span id="js-combo">0</span></p>
+        </div>
+    </div>
+    <script src="mainJuego.js"></script>
 </body>
 </html>
