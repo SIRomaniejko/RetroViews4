@@ -1,0 +1,161 @@
+.contenedor{
+	/* width: 320px; */
+	/* height: 568px; */
+	width: 100%;
+	height: 625px;
+}
+.video{
+	position: relative;
+	width: 100%;
+	height: 30%;
+}
+.video img{
+	width: 100%;
+	height: 100%;
+}
+.sombra{
+	position: absolute;
+	left:0;
+	top:0;
+	background-color: black;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+}
+.botonPlay{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+.botonPlay img{
+	width: 30px;
+	height: 30px;
+}
+.titulo{
+	float:left;
+	font-weight: bold;
+	margin-left: 3px;
+}
+.informacion{
+	float:right;
+}
+.descripcion{
+	clear: both;
+	margin-left: 3px;
+}
+.linea{
+	background-color:#a4a3a3;
+	height: 2px;
+	width: 98%;
+	margin: auto;
+	margin-top: 3px;
+}
+.container{
+	width: 100%;
+}
+.botonera{
+	width: 90%;
+	margin: auto;
+}
+.botonera p{
+	text-align: center;
+}
+.distancia{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.episodio{
+	width: auto;
+	display: flow-root;
+	margin: 5px 5px 0 5px;
+}
+.episodio img{
+	width: 30%;
+	float: left;
+	margin-right: 5px;
+}
+.float-right{
+	float: right;
+}
+.episodio span{
+	font-size: 14px;
+}
+.episodio p{
+	font-size: 12px;
+}
+
+
+body{
+	margin: 0 0 0 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+	margin: 0 0 0 0;
+}
+span{
+	display: inline;
+}
+.informacion span{
+	padding-right: 5px;
+}
+
+@media screen and (min-width: 700px) {
+	body{
+		font-size: 20px;
+	}
+	.contenedor{
+		width: 70%;
+		height: 625px;
+		margin: auto;
+	}
+	.video{
+		width: 100%;
+		height: 80%;
+	}
+	.botonPlay img{
+		width: 45px;
+		height: 45px;
+	}
+	.botonPlay{
+		margin-left: -22.5px;
+		margin-top: -22.5px;
+	}
+	.titulo{
+		font-size: 30px;
+	}
+	.informacion{
+		margin-top: 7px;
+	}
+	.informacion span{
+		padding-left: 10px;
+	}
+	.distancia{
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+	.episodio span{
+		font-size: 22px;
+	}
+	.episodio p{
+		font-size: 20px;
+	}
+	.botonera{
+		margin-bottom: 15px;
+	}
+	.botonera p span{
+		margin-bottom: 15px;
+		margin: 30px;
+	}
+	.botonera p {
+		margin-top: 12px;
+	}
+	.botonera span:hover{
+		border-bottom: #ACD439 2px solid;
+	}
+	.botonera span:active{
+		border-bottom: #91136E 2px solid;
+	}
+  }
