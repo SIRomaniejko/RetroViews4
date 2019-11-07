@@ -5,19 +5,39 @@ body,p,input{
 input{
 	border: none;
 }
+.botonLogOut{
+	width: 60%;
+	margin: auto;
+	margin-bottom: 5%;
+	background-color: #FA5555;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 2px;
+}
+.botonLogOut:hover{
+	background-color: #f87070;
+}
+.botonLogOut:active{
+	background-color: #fb4848;
+}
+.botonLogOut p{
+	padding: 5px 5px 5px 5px;
+}
 .contenedorConfiguracion{
 	width: 90%;
-	height: 600px;
 	margin: auto;
+	margin-bottom: 15px;
+	background-color: #f3f3f3;
+	padding-bottom: 3px;
 }
 .tituloConfiguracion{
-	font-size: 20px;
-	margin-left: 5px;
+	font-size: 25px;
+	margin: 0 0 0 5px;
 }
 .lineaTituloConfiguracion{
 	width: 100%;
-	background-color: #000000;
-	height: 2px;
+	background-color: #A4A3A3;
+	height: 1px;
 	margin: 5px 0 5px 0;
 }
 .elementoConfiguracion{
@@ -35,6 +55,7 @@ input{
 	height: 20px;
 	width: 100%;
 	color: #000000;
+	/* background-color: #f3f3f3; */
 }
 .lineaConfiguracion{
 	width: 100%;
@@ -43,4 +64,20 @@ input{
 	margin: auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+@media screen and (min-width : 700px){
+	.contenedorConfiguracion{
+		width: 40%;
+	}
+	.elementoConfiguracion p,input{
+		font-size: 20px;
+	}
+	.elementoConfiguracion{
+		margin: auto;
+		width: 90%;
+		margin-bottom:20px;
+	}
+	.botonLogOut{
+		width: 25%;
+	}
 }
