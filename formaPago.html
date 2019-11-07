@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="login.css">
 	<link rel="stylesheet" href="main.css">
-	<title>Registro</title>
+	<link rel="stylesheet" href="formaPago.css">
+	<title>Forma de pago</title>
 </head>
 <body>
 	<div class="fondoColor"></div>
@@ -14,33 +15,43 @@
 		<img src="images/logo.png" class="row logo">
 	</div>
 	<div class="pasosRegistro">
-		<p>Información</p>
+		<p class="pasoSiguiente">Información</p>
 		<p class="pasoSiguiente">Membresía</p>
-		<p class="pasoSiguiente">Forma de pago</p>
+		<p>Forma de pago</p>
 	</div>
-	<!-- <div class="contenedorLogin"> -->
 	<div class="contenedorRegistro">
-		<!-- <h1 class="tituloLogin">Registro</h1> -->
 		<div class="formularioLogin">
 			<form>
-				<label>Nombre </label>
+				<label>Titular </label>
 				<input type="text" class="inputLogeo">
-				<label>Usuario </label>
-				<input type="text" class="inputLogeo">
-				<label>Email </label>
-				<input type="text" class="inputLogeo">
-				<label>Contraseña </label>
-				<input type="password" class="inputLogeo">
+				<label>Número </label>
+				<input type="number" class="inputLogeo">
+				<label>Vencimiento </label>
+				<label class="labelOculto"></label>
+				<div class="divVencimientoMes">
+					<span>Mes</span>
+					<input type="text" class="inputLogeo">
+				</div>
+				<div class="divVencimientoAnio">
+					<span>Año</span>
+					<input type="number" class="inputLogeo">
+				</div>
+				<div class="clearFloat"></div>
 			</form>
 			<div class="botonConfirmar">
 				<p>Confirmar</p>
 			</div>
+			<a href="cardPrice.html">
+				<div class="botonBack">
+					<p>Cancelar</p>
+				</div>
+			</a>
 		</div>
-		<div class="anchorExtra">
+		<!-- <div class="anchorExtra">
 			<p>¿Ya tienes cuenta?<a href="login.html" style="text-decoration: black underline"> Inicia sesión</a></p>
 			<a href="faq.html">Ayuda</a>
-		</div>
+		</div> -->
 	</div>
-	<script src="registro.js"></script>
+	<script src="formaPago.js"></script>
 </body>
 </html>

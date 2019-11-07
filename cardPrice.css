@@ -43,11 +43,6 @@
     float: left;
     margin-right: 10px;
 }
-body,p,h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
 .infoCard{
     margin-top: 5%;
 }
@@ -75,7 +70,7 @@ body,p,h1{
 .cardPricesDisponibles{
     width: 100%;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 15px 0 10px 0;
 }
 .cardPricesDisponibles p{
     display: inline;
@@ -108,8 +103,31 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.btnSmallConfirmar{
+    display: none;
+}
+.botonBack{
+    margin: auto;
+    background-color: #FA5555;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.botonBack p{
+    padding-top: 7.5px;
+}
+.botonBack:hover{
+	background-color: #f87070;
+}
+.botonBack:active{
+	background-color: #fb4848;
+}
 
-@media screen and (min-width : 1050px){
+@media screen and (min-width : 900px){
     .tituloCardPrice{
         font-size: 30px;
         margin: 10px 0 50px 0;
@@ -120,8 +138,11 @@ a{
         height: 250px;
     }
     .botonConfirmarMembresia{
-        /* width: 25%; */
         display: none;
+    }
+    .botonBack{
+        width: 25%;
+        margin-top: 30px;
     }
     .cardPricesDisponibles{
         display: none;
@@ -138,6 +159,7 @@ a{
         margin-right: 0px;
     }
     .btnSmallConfirmar{
+        display: block;
         width: 100px;
         height: 30px;
         margin: auto;
