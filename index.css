@@ -22,7 +22,6 @@
 .container-movies img{
     /* width: 90px; */
     height: 133px;
-    margin-left: 5px;
 }
 
 .promocion img{
@@ -43,6 +42,40 @@
 }
 
 
+.movie-card{
+    position: relative; 
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.movie-card img:hover{
+    animation: hoverDeCard 1s forwards;
+}
+
+.darkened-card{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.movie-card p{
+    position: absolute; top: 2px; left: 3px;
+    color: white;
+}
+
+@keyframes hoverDeCard{
+    0%{
+
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+
 @media (min-width: 1050px){
     .scroll-movies{
         
@@ -60,7 +93,7 @@
     }
 
     .container-movies img{
-        margin-left: 10px;
+        
         /* width: 140px; */
         height: 200px;
     }
