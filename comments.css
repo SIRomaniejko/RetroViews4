@@ -176,3 +176,9 @@ p, h4{
 		transform: scale(1)
 	}
 }
+
+
+.indicadorComentario{
+	margin-top: 5px !important;
+	margin-bottom: 0 !important;
+}
