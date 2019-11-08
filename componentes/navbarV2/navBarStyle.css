@@ -1,0 +1,19 @@
+.colorPrincipal{
+    background-color: #A72D85;
+}
+
+.colorFondo{
+    background-color: #2F0323 !important;
+}
+
+.bordeOscuro{
+    border-color: #2F0323;
+}
+
+.logo{
+    width: 64px;
+}
+
+.navbar a{
+    color: #ACD439 !important;
+}

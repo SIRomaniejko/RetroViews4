@@ -1,6 +1,9 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
+body{
+    background-color: #2F0323 !important;
+}
 .scroll-movies{
     width: 100%;
     height: 140px;
