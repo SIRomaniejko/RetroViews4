@@ -17,10 +17,10 @@ function scrollPos(){
 }
 let movimientoScroll = 500;
 document.querySelectorAll(".sectorPeliculas").forEach(sector=>{
+    console.log("xD");
     let window = sector.querySelector(".scroll-movies");
-    console.log(sector);
-    console.log(sector.querySelector(".js-scrollLeft"));
     sector.querySelector(".js-scrollLeft").addEventListener("click", ()=>{
+        console.log("evento activado");
         scrollHorizontal(false, window);
     })
     sector.querySelector(".js-scrollRight").addEventListener("click", ()=>{
