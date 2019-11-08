@@ -13,13 +13,13 @@
     width: 0;
 }
 
-.container-movies{
+.container-movies-sin-ordenar{
     margin: auto;
     width: 95%;
     padding: auto;
 }
 
-.container-movies img{
+.container-movies-sin-ordenar img{
     width: 90px;
     height: 133px;
     margin-left: 5px;
@@ -47,6 +47,10 @@
     font-size: 24px;
 }
 
+.container-movies-sin-ordenar a{
+    float: left !important;
+}
+
 
 @media (min-width: 1050px){
     .scroll-movies{
@@ -64,7 +68,7 @@
         height: 34px;
     }
 
-    .container-movies img{
+    .container-movies-sin-ordenar img{
         margin-left: 10px;
         width: 140px;
         height: 200px;
