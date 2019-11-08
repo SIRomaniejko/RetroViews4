@@ -5,6 +5,7 @@ let avion = document.getElementById("avion");
 avion.addEventListener("click",mostrarPulgares);
 function mostrarPulgares(){
     document.getElementById("pulgares").classList.toggle("hidden");
+    document.getElementById("pulgares").classList.toggle("descenso");
 }
 document.getElementById("imglike").addEventListener("click",mostrarPulgares);
 document.getElementById("imgdislike").addEventListener("click",mostrarPulgares);
