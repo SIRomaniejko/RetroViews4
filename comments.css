@@ -111,7 +111,7 @@ p, h4{
 	width: 50%;
 	height: 100px;;
 	background-color: #91136e;
-	position: absolute;
+	position: fixed;
 	top:-100px;
 	left:25%;
 }
