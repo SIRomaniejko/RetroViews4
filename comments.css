@@ -46,15 +46,21 @@ p, h4{
 }
 
 .animarElem{
-	animation: animarElem 1s;
+	animation: animarElem 3s;
 	animation-iteration-count: infinite;
 
 }
 @keyframes animarElem{
-	25%{transform: translateY(2px);opacity: 1; }
-	50%{transform: translateY(-2px);opacity: 1; }
-	75%{transform: translateY(2px);opacity: 1; }
-	100%{transform: translateY(-2px);opacity: 1; }
+	33%{
+		transform: rotate(10deg)
+	}
+	66%{
+		transform: rotate(-40deg);
+		transform: scale(1.1);
+	}
+	100%{
+		transform: rotate(0deg)
+	}
 } 
 
 .agregarComentario{
