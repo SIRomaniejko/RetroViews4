@@ -3,6 +3,9 @@ body,p,h1{
 	padding: 0 0;
 	font-family: 'Open Sans', sans-serif !important;
 }
+.h1Titulo{
+	font-size: 16px !important;
+}
 body{
 	/* background-color: #180011 !important; */
 	background-color: #2F0323 !important;
@@ -108,6 +111,10 @@ body{
 	}
 	.tituloSeriePelicula{
 		font-size: 16px;
+	}
+	
+	.h1Titulo{
+		font-size: 22px !important;
 	}
 }
 
