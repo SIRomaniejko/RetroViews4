@@ -8,32 +8,47 @@
     <link rel="stylesheet" type="text/css" media="screen" href="indexUnlogged.css" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
-        <nav>
-                <ul class="nav-mobil" style="justify-content: space-around">
-                    <li>
-                            <img class="logo" src="images/logo.png" alt="">
+        <nav>   
+                
+                <ul class="nav-mobil">
+                    <li id="hambaga" class="mobil">
+                        <img src="images/Hamburger_icon.png" alt="">
                     </li>
-                    <li></li>
-                    <li></li>
                     <li>
-                        <a href="login.html">
-                            <button id="acceso-button">
-                                <img src="images/logIn-icon.png" alt="">
-                                <p>acceder</p>
-                            </button>
+                        <a href="index.html">
+                            <img class="logo" src="images/logo.png" alt="">
                         </a>
+                    </li>
+                    <ul class="computer extraOptionsNav" class="bordeadoBajo">
+                            
+                    </ul>
+                    
+                    
+                    <li class="botonesConstantes">
+                            <div class="dropdown">
+                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/profile_icon.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item colorTextoPrimario" href="login.html">Iniciar Sesión</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="registro.html">Registrarse</a>
+                                </div>
+                            </div> 
+                             
                     </li>
                 </ul>
             </nav>
-            <script src="navScript.js"></script>
+
+
     
-    <h1 style="text-align: center">Bienvenido a RetroViews4, tenemos todo esto y mucho mas para ofrecerte</h1>
+    <h1 style="text-align: center" class="colorTextoSecundario">Bienvenido a RetroViews4, tenemos todo esto y mucho mas para ofrecerte</h1>
     
     <div class="container-movies-sin-ordenar">
-            <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -43,7 +58,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/inglorious.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -53,7 +68,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/moonlight.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -63,7 +78,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/blade.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -73,7 +88,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/deadpool.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -83,7 +98,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/monty.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -93,7 +108,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -103,7 +118,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/inglorious.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -113,7 +128,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/moonlight.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -123,7 +138,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/blade.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -133,7 +148,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/deadpool.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -143,7 +158,287 @@
                         </div>
                     </div>
                 </a>
-                <a href="signin.html">
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/monty.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Monty Python and the holy grail</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/pulpfiction.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Pulp Fiction</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/inglorious.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Inglorious basters</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/moonlight.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Moonlight</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/blade.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Blade Runner</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/deadpool.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Deadpool</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/monty.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Monty Python and the holy grail</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/pulpfiction.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Pulp Fiction</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/inglorious.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Inglorious basters</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/moonlight.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Moonlight</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/blade.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Blade Runner</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/deadpool.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Deadpool</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/monty.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Monty Python and the holy grail</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/pulpfiction.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Pulp Fiction</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/inglorious.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Inglorious basters</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/moonlight.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Moonlight</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/blade.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Blade Runner</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/deadpool.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Deadpool</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/monty.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Monty Python and the holy grail</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/pulpfiction.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Pulp Fiction</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/inglorious.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Inglorious basters</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/moonlight.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Moonlight</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/blade.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Blade Runner</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/deadpool.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Deadpool</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/monty.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Monty Python and the holy grail</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/moonlight.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Moonlight</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/blade.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Blade Runner</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="movie-card">
+                        <img src="images/movie-posters/deadpool.jpg" alt="">
+                        <div class="darkened-card invisiblePropio">
+                            <p class="infoTop">Deadpool</p>
+                            <img src="images/play-icon.png" alt="">
+                            <p class="infoBottom">R-18</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="login.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/monty.jpg" alt="">
                         <div class="darkened-card invisiblePropio">
@@ -162,5 +457,9 @@
             <p style="display: inline-block; margin-top: 5px">RetroViews4 Inc.</p>
             <a style="display: inline-block; margin-top: 5px" href="faq.html">soporte</a>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,26 +1,14 @@
-document.querySelector("button").addEventListener("click", ()=>{
-    posActual = posActual + suma;
-    row.scroll({
-        top: 0,
-        left: posActual,
-        behavior: 'smooth'
-      });
-})
+
 
 let posActual = 0;
 let suma = 800;
 
 let row = document.querySelector(".row");
 
-function scrollPos(){
-    console.log(document.querySelector(".scroll-movies").scrollLeft);
-}
 let movimientoScroll = 500;
 document.querySelectorAll(".sectorPeliculas").forEach(sector=>{
-    console.log("xD");
     let window = sector.querySelector(".scroll-movies");
     sector.querySelector(".js-scrollLeft").addEventListener("click", ()=>{
-        console.log("evento activado");
         scrollHorizontal(false, window);
     })
     sector.querySelector(".js-scrollRight").addEventListener("click", ()=>{

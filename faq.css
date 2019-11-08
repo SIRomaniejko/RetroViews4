@@ -4,7 +4,6 @@ body,p{
 }
 .contenedorFaq{
 	width: 100%;
-	height: 100px;
 	margin: auto;
 	margin-bottom: 10px;
 }
@@ -23,12 +22,11 @@ body,p{
 	height: 2px;
 	width: 90%;
 	margin: auto;
-	background-color: #000000;
+	background-color: white;
 }
 @media screen and (min-width: 700px) {
 	.contenedorFaq{
 		width: 45%;
-		height: 20%;
 		float: left;
 		margin-left: 20px;
 		margin-bottom: 20px;

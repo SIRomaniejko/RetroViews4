@@ -14,6 +14,15 @@ input{
 	font-size: 18px;
 	border-radius: 2px;
 }
+
+.contenedorConfiguracion p{
+	color: #DEF1A6;
+}
+
+.contenedorConfiguracion input{
+	background-color: #91136e;
+	color: #ACD439 !important;
+}
 .botonLogOut:hover{
 	background-color: #f87070;
 }
@@ -54,8 +63,6 @@ input{
 .elementoConfiguracion input{
 	height: 20px;
 	width: 100%;
-	color: #000000;
-	/* background-color: #f3f3f3; */
 }
 .lineaConfiguracion{
 	width: 100%;

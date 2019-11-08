@@ -1,3 +1,6 @@
+body{
+	background-color: #2F0323;
+}
 .contenedor{
 	/* width: 320px; */
 	/* height: 568px; */
@@ -45,7 +48,6 @@
 	margin-left: 3px;
 }
 .linea{
-	background-color:#a4a3a3;
 	height: 2px;
 	width: 98%;
 	margin: auto;
@@ -158,3 +160,7 @@ span{
 		border-bottom: #91136E 2px solid;
 	}
   }
+
+.infoBottom{
+	bottom: 20px !important;
+}
