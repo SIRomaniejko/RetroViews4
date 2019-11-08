@@ -40,3 +40,27 @@ function scrollHorizontal(toTheRight, window){
         behavior: 'smooth'
     });
 }
+
+
+console.log(document.querySelector(".movie-card"));
+
+document.querySelectorAll(".movie-card").forEach(card=>{
+    card.addEventListener("mouseover", event=>{
+        console.log(card);
+        let thisImagen = card.querySelector("img");
+        let thisInfo = card.querySelector(".darkened-card");
+        thisImagen.classList.add("agrandar");
+        thisInfo.classList.add("mostrarInfo");
+        document.querySelectorAll(".agrandar").forEach(imagen=>{
+            if(thisImagen != imagen){
+                imagen.classList.remove("agrandar");
+            }
+        })
+        document.querySelectorAll(".mostrarInfo").forEach(info=>{
+            if(thisInfo != info){
+                info.classList.remove("mostrarInfo");
+            }
+        })
+    })
+})
+
