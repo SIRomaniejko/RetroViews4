@@ -1,0 +1,155 @@
+body,p,h1{
+	margin: 0 0;
+	padding: 0 0;
+}
+.contenedorPlayer{
+	width: 100%;
+	height: 375px;
+	margin: auto;
+}
+.contenedorVariable{
+	width: 100%;
+	/* height: 550px; */
+	height: fit-content;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.contenedorSeriePelicula{
+	position: relative;
+	width: 100%;
+	/* height: 30%; */
+}
+.contenedorSeriePelicula img{
+	width: 100%;
+}
+.botonPlay{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+.botonPlay img{
+	width: 30px;
+	height: 30px;
+}
+.botonAgregarMiLista{
+	position: absolute;
+	top:0;
+	right:0;
+	margin-top: 5px;
+	margin-right: 2px;
+}
+.botonAgregarMiLista img{
+	width: 25px;
+	height: 25px;
+}
+.tituloSeriePelicula{
+	position: relative;
+	width: 100%;
+	border-bottom: 1px black solid;
+	/* background-color: purple; */
+}
+.datosSeriePelicula{
+	/* background-color: greenyellow; */
+	text-align: center;
+	margin-top: 5px;
+}
+.datosSeriePelicula p{
+	display: inline;
+	margin: 0 0 0 5px;
+}
+.cajaInfoSeriePelicula{
+	width: 100%;
+}
+.comentariosRecientes{
+	display: none;
+}
+.indicadorComentario{
+	display: none;
+}
+.botonera{
+	width: 100%;
+	text-align: center;
+}
+.botonera p{
+	display: inline;
+	padding-right: 10px;
+}
+.botonera p:hover{
+	font-weight: bold;
+}
+.botonera p:active{
+	color: #A4A3A3;
+}
+
+@media screen and (min-width: 1000px) {
+	.video{
+		width: 100%;
+		height: 80%;
+	}
+	.botonPlay img{
+		width: 45px;
+		height: 45px;
+	}
+	.botonPlay{
+		margin-left: -22.5px;
+		margin-top: -22.5px;
+	}
+	.contenedorPlayer{
+		width: 70%;
+		position: relative;
+		height: 400px;
+	}
+	.contenedorVariable{
+		width: 70%;
+	}
+	.contenedorSeriePelicula{
+		width: 70%;
+		float: left;
+	}
+	.cajaInfoSeriePelicula{
+		width: 30%;
+		height: 100%;
+		float: right;
+		/* margin: 0 0 0 5px; */
+	}
+	.cajaInfoSeriePelicula p,h1{
+		margin-left: 5px;
+	}
+	.descripcionSeriePelicula{
+		font-size: 24px;
+	}
+	.datosSeriePelicula{
+		font-size: 20px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-right: 2.5%;
+		margin-bottom: 1.5%;
+	}
+	.tituloSeriePelicula{
+		font-size: 16px;
+		padding: 0 0 5px 0;
+	}
+	.botonAgregarMiLista img{
+		width: 30px;
+		height: 30px;
+	}
+	.comentariosDesctacados{
+		width: 65%;
+		float: left;
+	}
+	.comentariosRecientes{
+		display: block;
+		width: 35%;
+		float: right;
+	}
+	.indicadorComentario{
+		display: block;
+		font-size: 20px;
+	}
+	.botonera p{
+		font-size: 25px;
+	}
+}
