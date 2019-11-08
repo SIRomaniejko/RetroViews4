@@ -4,6 +4,9 @@
     font-family: 'Open Sans', sans-serif !important;
 }
 nav{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
     background-color: #91136e;
     width: 100%;
     height: 66px;
@@ -99,11 +102,12 @@ li{
 }
 
 .sidebar{
-    position: absolute;
+    position: fixed;
+    margin-bottom: 0;
     top: 0;
     bottom: 0;
     left: -260px; 
-    z-index: 1000;
+    z-index: 40000;
     width: 260px;
     background-color: #A72D85;
 }
