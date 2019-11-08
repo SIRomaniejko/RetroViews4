@@ -1,6 +1,6 @@
 .commentBox{
 	width: 99%;
-	height: 70px;
+	height: 90px;
 	border-radius: 5px;
 	border: 1px black solid;
 	display: inline-flex;
@@ -28,6 +28,7 @@ p, h4{
 }
 .nombre p{
 	font-size: 18px;
+	margin: 0 0;
 }
 .contenido p{
 	font-size: 16px;
@@ -74,7 +75,7 @@ p, h4{
 	border: none;
 	border-bottom: 2px black solid;
 	padding: 0 0 0 0;
-	width: 85%;
+	width: 80%;
 	margin: 0 0 0 5px;
 	height: 30px;
 	background-color: #91136E;
@@ -87,7 +88,7 @@ p, h4{
 	width: 30px;
 	/* height: 37px; */
 	float: right;
-	margin: 5px 5px 0 0;
+	margin: 3px 3px 0 0;
 }
 .lineaDivisoriaAddComentario{
 
@@ -106,7 +107,7 @@ p, h4{
 	height: 100px;;
 	background-color: #91136e;
 	position: absolute;
-	top:50%;
+	bottom:-52% !important;
 	left:25%;
 }
 .mensajeMiLista{
@@ -152,8 +153,8 @@ p, h4{
 	}
 	.pulgares{
 		width: 20%;
-		height: 100px;;
-		top:50%;
+		height: 100px;
+		bottom: -67% !important;
 		left:40%;
 	}
 }

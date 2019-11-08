@@ -7,6 +7,9 @@ body{
 	/* background-color: #180011 !important; */
 	background-color: #2F0323 !important;
 }
+.h1Titulo{
+	font-size: 22px !important;
+}
 .contenedorPlayer{
 	width: 70%;
 	margin: auto !important;
@@ -21,7 +24,7 @@ body{
 .contenedorVariable{
 	width: 70%;
 	margin: auto !important;
-	margin-bottom: 25px;
+	margin-bottom: 40px !important;
 	margin-top: 10px;
 }
 .contenedorSeriePelicula{
@@ -47,7 +50,7 @@ body{
 	position: absolute;
 	top:0;
 	right:0;
-	margin-top: 5px;
+	/* margin-top: 5px; */
 	margin-right: 2px;
 }
 .botonAgregarMiLista img{
@@ -153,8 +156,8 @@ body{
 		padding: 0 0 5px 0;
 	}
 	.botonAgregarMiLista img{
-		width: 30px;
-		height: 30px;
+		width: 45px;
+		height: 45px;
 	}
 	.comentariosDesctacados{
 		width: 65%;
@@ -177,6 +180,9 @@ body{
 	.lineaDivisoria{
 		width: 70%;
 		margin: auto;
+	}
+	.h1Titulo{
+		font-size: 30px !important;
 	}
 }
 
