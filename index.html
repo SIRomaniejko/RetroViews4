@@ -13,16 +13,7 @@
 <body>
 
         <nav>   
-                <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
+                
                 <ul class="nav-mobil">
                     <li id="hambaga" class="mobil">
                         <img src="images/Hamburger_icon.png" alt="">
@@ -49,10 +40,7 @@
                                 </a>
                             </li>
                     </ul>
-                    <li class="mobil">
-                        <img id="js-bell-mobile"src="images/bell_icon.png" alt="">
-                        <img class="lupa" src="images/search_icon.png" alt="">
-                    </li>
+                    
                     <div id="notificacionContainer" class="hidden">
                         <div id="notification">
                             <div class="triangle-up"></div>
@@ -75,135 +63,65 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="computer extraOptionsNav optionsNavRight">
-                        <li class="busqueda">
-                            
-                            <form action="busqueda.html">
-                                <input type="text" placeholder="  búsqueda">
-                                <div class="contenedorFiltro filtroPC computer hidden">
-                                    <div class="flexTop">
-                                        <div class="selects filterPart">
-                                            <select name="" id="">
-                                                <option value="">Año</option>
-                                                <option value="">2019</option>
-                                                <option value="">2018</option>
-                                            </select>
-                                            <select name="" id="">
-                                                <option value="">Género</option>
-                                                <option value="">Acción</option>
-                                                <option value="">Terror</option>
-                                            </select>
-                                        </div>
-                                        <div class="inputs filterPart">
-                                            <input class="inputFiltro" type="text" placeholder="Director">
-                                            <input class="inputFiltro" type="text" placeholder="Actor">
-                                        </div>
-                                    </div>
-                                    <div class="radioFiltro">
-                                        <div class="serieFiltro">
-                                            <p>Series</p>
-                                            <input type="radio" name="tipoContenido">
-                                        </div>
-                                        <div class="serieFiltro">
-                                            <p>Películas</p>
-                                            <input type="radio" name="tipoContenido">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="js-openFilters" type="button"><img src="images/equalizer_icon.png" alt=""></button>
-                                <input type="submit" class="submitOculto" style="width: 0">
-                            </form>
-                        </li>
-                        <li>
-                            <img class="js-bell" src="images/bell_icon.png" alt="">
-                        </li>
-                        <li>
-                            <li class="computer iconAndText">
-                                <a href="configuracion.html">
-                                    <img src="images/profile_icon.png" alt="">
-                                </a>
-                            </li>
-                        </li>
-                    </ul>
-                </ul>
-                <div class="busqueda busquedaMobil hidden">
-                    <form action="busqueda.html">
-                        <button id="busquedaReturn" type="button"><img src="images/arrow-left.png" alt=""></button>
-                        <input type="text" placeholder="  búsqueda">
-                        <button class="js-openFilters" type="button"><img src="images/equalizer_icon.png" alt=""></button>
-                        <div class="contenedorFiltro mobil hidden">
-                            <div class="flexTop">
-                                <div class="selects filterPart">
-                                    <select name="" id="">
-                                        <option value="">Año</option>
-                                        <option value="">2019</option>
-                                        <option value="">2018</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">Género</option>
-                                        <option value="">Acción</option>
-                                        <option value="">Terror</option>
-                                    </select>
-                                </div>
-                                <div class="inputs filterPart">
-                                    <input class="inputFiltro" type="text" placeholder="Director">
-                                    <input class="inputFiltro" type="text" placeholder="Actor">
-                                </div>
-                            </div>
-                            <div class="radioFiltro">
-                                <div class="serieFiltro">
-                                    <p>Series</p>
-                                    <input type="radio" name="tipoContenido">
-                                </div>
-                                <div class="serieFiltro">
-                                    <p>Películas</p>
-                                    <input type="radio" name="tipoContenido">
+                    <form action="busqueda.html" class="buscadorPropio computer">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
+                                    <img src="images/search_icon2.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" class="submitOculto">
                     </form>
-                </div>
+                    <li class="botonesConstantes">
+                            
+                            <div class="dropdown">
+                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/profile_icon.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item colorTextoPrimario" href="configuracion.html">Mi perfil</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="indexUnlogged.html">Desconectarse</a>
+                                </div>
+                            </div> 
+                            <div class="dropdown">
+                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/bell2_icon.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item colorTextoPrimario" href="#">Action</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">Another action</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">Something else here</a>
+                                </div>
+                            </div>  
+                    </li>
+                </ul>
             </nav>
         
             <ul class="sidebar">
-                <p id="nombreSitio">RetroViews4</p>
+                <p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
                 <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
-                <div class="sidebarButtons">
-                    <div class="flexButtonsSidebar">
-                        <li class="iconAndText">
-                            <a href="peliculas.html">
-                                <img src="images/movie_icon.png" alt="">
-                                <p>Películas</p>
-                            </a>
-                        </li>
-                        <li class="iconAndText">
-                            <a href="series.html">
-                                <img src="images/series_icon.png" alt="">
-                                <p>Series</p>
-                            </a>
-                        </li>
-                        <li class="iconAndText">
-                            <a href="lista.html">
-                                <img src="images/bookmark_icon.png" alt="">
-                                <p>Mi Lista</p>
-                            </a>
-                        </li>
-                    </div>
-                    <div class="flexButtonsSidebar">
-                        <li class="iconAndText">
-                            <a href="configuracion.html">
-                                <img src="images/profile_icon.png" alt="">
-                                <p>Mi Perfil</p>
-                            </a>
-                        </li>
-                        <li class="iconAndText">
-                            <a href="faq.html">
-                                <img src="images/help_icon.png" alt="">
-                                <p>Soporte</p>
-                            </a>
-                        </li>
-                    </div>
+                <div class="sidebarFlexLast">
+                    <form action="busqueda.html" class="buscadorPropio">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
+                                    <img src="images/search_icon2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <a class="sidebarButton colorTextoPrimario" href="peliculas.html">
+                        <p>Películas</p>
+                    </a>
+                    <a class="sidebarButton colorTextoPrimario" href="series.html">
+                        <p>Series</p>
+                    </a>
+                    <a class="sidebarButton colorTextoPrimario" href="lista.html">
+                        <p>Mi Lista</p>
+                    </a>
+                    
                 </div>
             </ul>
             <script src="navScript.js"></script>
@@ -250,7 +168,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -260,7 +178,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -270,7 +188,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -280,7 +198,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -290,7 +208,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -300,7 +218,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -310,7 +228,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -320,7 +238,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -330,7 +248,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -340,7 +258,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -350,7 +268,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -360,7 +278,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
@@ -370,7 +288,7 @@
                 <a href="reproductor.html">
                     <div class="movie-card">
                         <img src="images/movie-posters/pulpfiction.jpg" alt="">
-                        <div class="darkened-card invisible">
+                        <div class="darkened-card invisiblePropio">
                             <p class="infoTop">Pulp Fiction</p>
                             <img src="images/play-icon.png" alt="">
                             <p class="infoBottom">R-18</p>
