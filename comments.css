@@ -95,6 +95,11 @@ p, h4{
 	width: 100%;
 }
 
+.comentariosRecientes .commentBox{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 
 .giganteBackground{
 	position: fixed;
@@ -106,7 +111,7 @@ p, h4{
 	height: 100px;;
 	background-color: #91136e;
 	position: absolute;
-	top:50%;
+	top:-100px;
 	left:25%;
 }
 .mensajeMiLista{
@@ -142,7 +147,6 @@ p, h4{
 @media screen and (min-width : 1150px){
 	.mensajeMiLista{
 		width: 15% !important;
-		top:50%;
 		left:42.5%;
 	}
 	.addComentario{
@@ -155,5 +159,19 @@ p, h4{
 		height: 100px;;
 		top:50%;
 		left:40%;
+	}
+}
+
+.descenso{
+	animation: agrandarse 1s forwards;
+	/* animation: agrandarse 2s easeOutBounce forwards; */
+}
+
+@keyframes agrandarse{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1)
 	}
 }
