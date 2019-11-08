@@ -1,8 +1,9 @@
  document.getElementById('secEpis').addEventListener('click', mostrarEpisodios);
  document.getElementById('secSim').addEventListener('click', mostrarSimilares);
  document.getElementById('secCom').addEventListener('click', mostrarComentarios);
- document.getElementById('episodios').style = "display:block";
- document.getElementById('comments').style = "display:none";
+
+ document.getElementById('comments').style = "display:block";
+ document.getElementById('episodios').style = "display:none";
  document.getElementById('similares').style = "display:none";
 
 function mostrarEpisodios(){
@@ -23,12 +24,20 @@ function mostrarComentarios(){
 }
 
 let avion = document.getElementById("avion");
-console.log(avion);
 
 avion.addEventListener("click",mostrarPulgares);
 function mostrarPulgares(){
-    console.log("ahhh");
     document.getElementById("pulgares").classList.toggle("hidden");
 }
 document.getElementById("imglike").addEventListener("click",mostrarPulgares);
 document.getElementById("imgdislike").addEventListener("click",mostrarPulgares);
+
+let btnMiLista = document.getElementById("btnAgregarMiLista");
+btnMiLista.addEventListener("click",mostrarMiLista);
+function mostrarMiLista(){
+    document.getElementById("agregadoMiLista").classList.toggle("hidden");
+    setTimeout(ocultarMensaje,2000);
+}
+function ocultarMensaje(){
+    document.getElementById("agregadoMiLista").classList.toggle("hidden");
+}
