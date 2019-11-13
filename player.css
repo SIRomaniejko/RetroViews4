@@ -24,9 +24,6 @@ body{
 	width: 100%;
 	height: 100%;
 }
-.contenedorVariable{
-	margin-top: 25px !important;
-}
 .botonPlay{
 	position: absolute;
 	left:50%;
