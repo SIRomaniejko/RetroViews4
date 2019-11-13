@@ -1,21 +1,18 @@
+document.querySelector("#avion").addEventListener("click",mostrarPulgares);
+document.querySelector("#imglike").addEventListener("click",mostrarPulgares);
+document.querySelector("#imgdislike").addEventListener("click",mostrarPulgares);
+document.querySelector("#btnAgregarMiLista").addEventListener("click",mostrarMiLista);
 
-let avion = document.getElementById("avion");
-
-avion.addEventListener("click",mostrarPulgares);
 function mostrarPulgares(){
-    document.getElementById("pulgares").classList.toggle("hidden");
-    document.getElementById("pulgares").classList.toggle("descenso");
+	document.querySelector("#pulgares").classList.toggle("hidden");
+	document.querySelector("#pulgares").classList.toggle("descenso");
 }
-document.getElementById("imglike").addEventListener("click",mostrarPulgares);
-document.getElementById("imgdislike").addEventListener("click",mostrarPulgares);
-
-let btnMiLista = document.getElementById("btnAgregarMiLista");
-btnMiLista.addEventListener("click",mostrarMiLista);
 function mostrarMiLista(){
-    document.getElementById("agregadoMiLista").classList.remove("hidden");
-    document.getElementById("agregadoMiLista").classList.toggle("descenso");
-    setTimeout(ocultarMensaje,2000);
+	document.querySelector("#agregadoMiLista").classList.toggle("hidden");
+	document.querySelector("#agregadoMiLista").classList.toggle("descenso");
+	setTimeout(ocultarMensaje,2000);
 }
 function ocultarMensaje(){
-    document.getElementById("agregadoMiLista").classList.add("hidden");
+	document.querySelector("#agregadoMiLista").classList.toggle("hidden");
+	document.querySelector("#agregadoMiLista").classList.toggle("descenso");
 }

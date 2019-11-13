@@ -15,9 +15,9 @@
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
-body > div{
+/* body > div{
     margin: 0 3% !important;
-}
+} */
 
 .sidebarFlexLast{
     display: flex;

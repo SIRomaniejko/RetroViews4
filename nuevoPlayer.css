@@ -3,32 +3,31 @@ body,p,h1{
 	padding: 0 0;
 	font-family: 'Open Sans', sans-serif !important;
 }
+a{
+	color: inherit !important;
+	text-decoration: none !important;
+}
+nav{
+	margin-bottom: 0 !important;
+}
 .h1Titulo{
-	font-size: 22px !important;
+	font-size: 24px;
+}
+h1,p{
+	margin: 0 0 0 5px !important;
 }
 body{
 	/* background-color: #180011 !important; */
 	background-color: #2F0323 !important;
 }
-.h1Titulo{
-	font-size: 22px !important;
-}
 .contenedorPlayer{
-	width: 70%;
+	width: 100%;
 	margin: auto !important;
-	color: #A4A3A3;
-}
-.lineaDivisoria{
-	width: 70%;
-	margin: auto !important;
-	height: 1px;
-	background-color: #A4A3A3;
 }
 .contenedorVariable{
-	width: 70%;
+	width: 100%;
 	margin: auto !important;
-	margin-bottom: 40px !important;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .contenedorSeriePelicula{
 	position: relative;
@@ -53,8 +52,6 @@ body{
 	position: absolute;
 	top:0;
 	right:0;
-	/* margin-top: 5px; */
-	margin-right: 2px;
 }
 .botonAgregarMiLista img{
 	width: 25px;
@@ -63,11 +60,8 @@ body{
 .tituloSeriePelicula{
 	position: relative;
 	width: 100%;
-	border-bottom: 1px #A4A3A3 solid;
-	/* background-color: purple; */
 }
 .datosSeriePelicula{
-	/* background-color: greenyellow; */
 	text-align: center;
 	margin-top: 5px;
 }
@@ -79,49 +73,83 @@ body{
 	width: 100%;
 	position: relative;
 }
-.comentariosRecientes{
-	display: none;
-}
-.indicadorComentario{
-	display: none;
-}
-.botonera{
-	width: 100%;
-	text-align: center;
-	color: #A4A3A3;
-	margin: 0 0 10px 0;
-}
-.botonera p{
-	display: inline;
-	padding-right: 10px;
-}
-.botonera p:hover{
-	color: #ACD439;
-}
-.botonera p:active{
-	color: #ACD439;
-	font-weight: bold;
-}
 .clear{
 	clear: both;
 }
+.comentariosDesctacados{
+	width: 100%;
+}
+.scrollTop{
+	height: unset !important;
+}
+.movie-card{
+	margin-left: 0 !important;
+}
+.sectorPeliculas{
+	margin-bottom: 0 !important;
+}
+.tiuloScroll{
+	font-size: 18px;
+}
+.botonesPelicula{
+	margin-top: 10px;
+}
+.botonesPelicula div{
+	width: 90%;
+	margin: auto;
+	height: fit-content;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.btnReproducir img {width: 20px;height: 20px; padding: 0 2px 2px 0;}
+.btnAgrearLista img{width: 20px;height: 20px; padding: 0 2px 2px 0;}
+.btnCalificar img  {width: 20px;height: 20px; padding: 0 2px 2px 0;}
+
+.btnReproducir{background-color: #ACD439;}
+.btnReproducir:hover{background-color: #80a11d;}
+
+.btnAgrearLista{background-color: #E6E6FF;}
+.btnAgrearLista:hover{background-color: #bfbfd8;}
+
+.btnCalificar{background-color: #E6E6FF;}
+.btnCalificar:hover{background-color: #bfbfd8;}
+
+.footerPagina{
+	width: 100%;
+	height: 100px;
+	color: #ACD439;
+	margin-top: 25px;
+}
+.footerPagina > div{
+	background-color: #91136e;
+	text-align: center;
+	width: 90%;
+	height: fit-content;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.redes > img{
+	margin: 0 10px 5px 0;
+	display: inline;
+}
+.soporteFoot img{
+	margin: 0 0 5px 0;
+}
+.footerPagina > div > img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
 @media screen and (min-width: 1150px) {
-	.descripcionSeriePelicula{
-		font-size: 22px !important;
-	}
-	.datosSeriePelicula{
-		font-size: 20px;
-	}
-	.tituloSeriePelicula{
-		font-size: 16px;
-	}
-	
-	.h1Titulo{
-		font-size: 30px !important;
-	}
+
 }
 
 @media screen and (min-width: 700px) {
+	.contenedorPlayer{
+		width: 80%;
+	}
 	.botonPlay img{
 		width: 45px;
 		height: 45px;
@@ -129,14 +157,6 @@ body{
 	.botonPlay{
 		margin-left: -22.5px;
 		margin-top: -22.5px;
-	}
-	.contenedorPlayer{
-		width: 70%;
-		position: relative;
-		height: fit-content;
-	}
-	.contenedorVariable{
-		width: 70%;
 	}
 	.contenedorSeriePelicula{
 		width: 70%;
@@ -146,18 +166,13 @@ body{
 		width: 30%;
 		height: fit-content;
 		float: right;
-		/* margin: 0 0 0 5px; */
+	}
+	.contenedorVariable{
+		width: 80% !important;
+		margin-top: 20px !important;
 	}
 	.cajaInfoSeriePelicula p,h1{
 		margin-left: 5px;
-	}
-	.descripcionSeriePelicula{
-		font-size: 14px;
-	}
-	.datosSeriePelicula{
-		font-size: 20px;
-		bottom: 0;
-		right: 0; 
 	}
 	.tituloSeriePelicula{
 		padding: 0 0 5px 0;
@@ -167,29 +182,25 @@ body{
 		height: 45px;
 	}
 	.comentariosDesctacados{
-		width: 65%;
-		float: left;
+		width: 100%;
 		color: #A4A3A3;
 	}
-	.comentariosRecientes{
-		display: block;
-		width: 35%;
-		float: right;
-		color: #A4A3A3;
+	.sectorPeliculas{
+		width: 100% !important;
 	}
-	.indicadorComentario{
-		display: block;
-		font-size: 20px;
-	}
-	.botonera p{
-		font-size: 25px;
-	}
-	.lineaDivisoria{
-		width: 70%;
+	.centradoComentarios{
 		margin: auto;
+		margin-top: 20px;
+		width: 50%;
 	}
-	.h1Titulo{
-		font-size: 30px !important;
+	.footerPagina{
+		height: fit-content;
+	}
+	.footerPagina > div{
+		float: left;
+		width: 50%;
+		padding: 20px 0 20px 0;
+		margin-bottom: 0;
 	}
 }
 

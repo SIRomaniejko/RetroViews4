@@ -1,12 +1,15 @@
 .commentBox{
-	width: 99%;
-	height: 90px;
+	width: 100%;
+	/* height: 90px; */
+	height: fit-content;
 	border-radius: 5px;
 	border: 1px black solid;
 	display: inline-flex;
 	margin: auto;
 	margin-bottom:5px;
 	color: black !important;
+	/* background-color: #eeeeee; */
+	background-color: #E6E6FF;
 }
 .comment{
 	width: 100%;
@@ -14,7 +17,7 @@
 	margin-top: 5px;
 }
 .nombre{
-	font-size: 25px;
+	/* font-size: 25px; */
 	width: 100%;
 }
 .nombre img{
@@ -23,15 +26,11 @@
 	margin-right: 5px;
 	margin-top: 2px;
 }
-p, h4{
-	margin: 0 0 0 5px;
-}
 .nombre p{
-	font-size: 18px;
 	margin: 0 0;
 }
 .contenido p{
-	font-size: 16px;
+	font-size: smaller;
 }
 .dislike{
 	/* background-color: #FFDCDC; */
@@ -64,41 +63,44 @@ p, h4{
 	}
 } 
 
-.agregarComentario{
+.cajaNuevoComentario{
 	width: 100%;
-	height: 40px;
-	background-color: #91136E;
-	border-radius: 2px;
+	height: 30px;
 	margin: 0 0 5px 0;
 }
-.addComentario{
+.divInputComentario input{
 	border: none;
-	border-bottom: 2px black solid;
-	padding: 0 0 0 0;
-	width: 80%;
-	margin: 0 0 0 5px;
-	height: 30px;
-	background-color: #91136E;
-	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	padding-left: 3px;
+	margin: 0 0 0 1px;
+	border-radius: 3px;
 }
-.addComentario::placeholder{
-	color: black;
+.divInputComentario{
+	width: 72.5%;
+	float: left;
+	height: 100%;
 }
-.agregarComentario img{
-	width: 30px;
-	/* height: 37px; */
+.divBotonComentario{
 	float: right;
-	margin: 3px 3px 0 0;
+	width: 25%;
+	height: 100%;
+	margin: 0 1px 0 0;
+	padding: 2px 0 0 0;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 3px;
+	background-color: #ACD439;
 }
+.divBotonComentario:hover{
+	background-color: #80a11d;
+}
+
 .lineaDivisoriaAddComentario{
 
 	height: 2px;
 	width: 100%;
-}
-
-.comentariosRecientes .commentBox{
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 
@@ -109,23 +111,29 @@ p, h4{
 }
 .pulgares{
 	width: 50%;
-	height: 100px;;
+	height: fit-content;
 	background-color: #91136e;
-	position: fixed;
-	top:-100px;
+	position: absolute;
+	bottom:-60%;
 	left:25%;
+	z-index: 10;
+	padding: 0 0 5px 0;
+}
+.pulgares p{
+	text-align: center;
 }
 .mensajeMiLista{
 	width: 50%;
-	height: 40px;;
+	height: fit-content;
 	background-color: #91136e;
 	position: absolute;
-	top:50%;
-	left:25%;
+	top: 25%;
+	left: 25%;
+	z-index: 10;
+	padding: 5px 0 5px 0;
 }
 .mensajeMiLista p{
 	text-align: center;
-	margin: 10px 0 10px 0;
 }
 .float-left{
 	float: left;
@@ -141,24 +149,17 @@ p, h4{
 	width: 35px;
 	margin-right: 35px;
 }
-.pulgares p{
-	text-align: center;
-	margin: 10px 0 10px 0;
-}
+
 @media screen and (min-width : 1150px){
 	.mensajeMiLista{
-		width: 15% !important;
-		left:42.5%;
-	}
-	.addComentario{
-		width: 95%;
-		margin: 3px 0 0 5px;
-		font-size: 16px;
+		width: 200px;
+		top: 45%;
+		left: 40%;
+		margin-left: -100px;
 	}
 	.pulgares{
 		width: 20%;
-		height: 100px;
-		bottom: -67% !important;
+		bottom:-75%;
 		left:40%;
 	}
 }
