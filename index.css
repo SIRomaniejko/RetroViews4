@@ -15,9 +15,14 @@
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
-/* body > div{
+
+.margenLindo{
     margin: 0 3% !important;
-} */
+}
+
+.sectorPeliculas{
+    margin: 0 3% !important;
+}
 
 .sidebarFlexLast{
     display: flex;
@@ -159,9 +164,26 @@
     margin-left: 10px;
 }
 
+.carouselMensage{
+    color: white;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+.mensajeTop{
+    top: 0;
+}
+
+.mensageBot{
+    bottom: 0;
+}
+
 .oscurecimientoSlide{
     position: absolute;
-    right: 0;
+    right: -1px;
     left: 75%;
     top: 0;
     bottom: 0;
