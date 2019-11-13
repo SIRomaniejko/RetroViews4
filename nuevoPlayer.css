@@ -27,7 +27,7 @@ body{
 }
 .contenedorPlayer{
 	width: 100%;
-	margin: 20px auto;
+	
 }
 .contenedorVariable{
 	width: 100%;
@@ -137,6 +137,7 @@ body{
 @media screen and (min-width: 700px) {
 	.contenedorPlayer{
 		width: 80%;
+		margin: 20px auto;
 	}
 	.botonPlay img{
 		width: 45px;
