@@ -13,8 +13,13 @@ nav{
 .h1Titulo{
 	font-size: 24px;
 }
-h1,p{
+
+.sectorPeliculas p{
 	margin: 0 0 0 5px !important;
+}
+
+h1{
+	margin: 0 0 0 16px !important;
 }
 body{
 	/* background-color: #180011 !important; */
@@ -22,7 +27,7 @@ body{
 }
 .contenedorPlayer{
 	width: 100%;
-	margin: auto !important;
+	margin: 20px auto;
 }
 .contenedorVariable{
 	width: 100%;
@@ -103,6 +108,10 @@ body{
 	margin-bottom: 5px;
 	cursor: pointer;
 }
+
+.sectorPeliculas{
+	margin-left: 0 !important;
+}
 .btnReproducir img {width: 20px;height: 20px; padding: 0 2px 2px 0;}
 .btnAgrearLista img{width: 20px;height: 20px; padding: 0 2px 2px 0;}
 .btnCalificar img  {width: 20px;height: 20px; padding: 0 2px 2px 0;}
@@ -116,30 +125,9 @@ body{
 .btnCalificar{background-color: #E6E6FF;}
 .btnCalificar:hover{background-color: #bfbfd8;}
 
-.footerPagina{
-	width: 100%;
-	height: 100px;
-	color: #ACD439;
-	margin-top: 25px;
-}
-.footerPagina > div{
-	background-color: #91136e;
-	text-align: center;
-	width: 90%;
-	height: fit-content;
-	margin: auto;
-	margin-bottom: 10px;
-}
-.redes > img{
-	margin: 0 10px 5px 0;
-	display: inline;
-}
-.soporteFoot img{
-	margin: 0 0 5px 0;
-}
-.footerPagina > div > img:hover{
-	cursor: pointer;
-	transform: scale(1.2);
+
+.cajaInfoSeriePelicula p,h1{
+	margin-left: 16px;
 }
 
 @media screen and (min-width: 1150px) {
@@ -171,9 +159,7 @@ body{
 		width: 80% !important;
 		margin-top: 20px !important;
 	}
-	.cajaInfoSeriePelicula p,h1{
-		margin-left: 5px;
-	}
+	
 	.tituloSeriePelicula{
 		padding: 0 0 5px 0;
 	}
@@ -192,15 +178,6 @@ body{
 		margin: auto;
 		margin-top: 20px;
 		width: 50%;
-	}
-	.footerPagina{
-		height: fit-content;
-	}
-	.footerPagina > div{
-		float: left;
-		width: 50%;
-		padding: 20px 0 20px 0;
-		margin-bottom: 0;
 	}
 }
 

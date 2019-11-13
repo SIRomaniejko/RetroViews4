@@ -5,101 +5,111 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="comments.css">
-	<link rel="stylesheet" href="nuevoPlayer.css">
-	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="nuevoPlayer.css">
 	<title>Pulp Fiction</title>
 </head>
 <body>
-	<nav>
-		<ul class="nav-mobil">
-			<li id="hambaga" class="mobil">
-				<img src="images/Hamburger_icon.png" alt="">
-			</li>
-			<li>
-				<a href="index.html">
-					<img class="logo" src="images/logo.png" alt="">
-				</a>
-			</li>
-			<ul class="computer extraOptionsNav" class="bordeadoBajo">
-				<li class="computer iconAndText">
-					<a href="peliculas.html">
-						<p>Películas</p>
-					</a>
-				</li>
-				<li class="computer iconAndText" class="bordeadoBajo"">
-					<a href="series.html">
-						<p>Series</p>
-					</a>
-				</li>
-				<li class="computer iconAndText" class="bordeadoBajo">
-					<a href="lista.html">
-						<p>Mi Lista</p>
-					</a>
-				</li>
-			</ul>
-			<form action="busqueda.html" class="buscadorPropio computer">
-				<div class="input-group mb-2">
-					<input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-					<div class="input-group-prepend ">
-						<div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-							<img src="images/search_icon2.png" alt="">
-						</div>
-					</div>
-				</div>
-			</form>
-			<li class="botonesConstantes">
-				<div class="dropdown">
-					<button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<img src="images/profile_icon.png" alt="">
-					</button>
-					<div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item colorTextoPrimario" href="configuracion.html">Mi perfil</a>
-						<a class="dropdown-item colorTextoPrimario" href="indexUnlogged.html">Desconectarse</a>
-					</div>
-				</div> 
-				<div class="dropdown">
-					<button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<img src="images/bell2_icon.png" alt="">
-					</button>
-					<div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de The Game</a>
-						<a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Perdiste</a>
-						<a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Valhalla</a>
-						<a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Black Sailscon</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</nav>
-		<ul class="sidebar">
-			<p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
-			<button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
-			<div class="sidebarFlexLast">
-				<form action="busqueda.html" class="buscadorPropio">
-					<div class="input-group mb-2">
-						<input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-						<div class="input-group-prepend ">
-							<div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-								<img src="images/search_icon2.png" alt="">
-							</div>
-						</div>
-					</div>
-				</form>
-				<a class="sidebarButton colorTextoPrimario" href="peliculas.html">
-					<p>Películas</p>
-				</a>
-				<a class="sidebarButton colorTextoPrimario" href="series.html">
-					<p>Series</p>
-				</a>
-				<a class="sidebarButton colorTextoPrimario" href="lista.html">
-					<p>Mi Lista</p>
-				</a>
-			</div>
-		</ul>
-		<script src="navScript.js"></script>
+		<nav>   
+                
+                <ul class="nav-mobil">
+                    <li id="hambaga" class="mobil">
+                        <img src="images/Hamburger_icon.png" alt="">
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img class="logo" src="images/logo.png" alt="">
+                        </a>
+                    </li>
+                    <ul class="computer extraOptionsNav" class="bordeadoBajo">
+                            <li class="computer iconAndText">
+                                <a href="peliculas.html">
+                                    <p>Películas</p>
+                                </a>
+                            </li>
+                            <li class="computer iconAndText" class="bordeadoBajo"">
+                                <a href="series.html">
+                                    <p>Series</p>
+                                </a>
+                            </li>
+                            <li class="computer iconAndText" class="bordeadoBajo">
+                                <a href="lista.html">
+                                    <p>Mi Lista</p>
+                                </a>
+                            </li>
+                    </ul>
+                    
+                    <form action="busqueda.html" class="buscadorPropio computer">
+                        <div class="input-group mb-2">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Actores, Generos, etc" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </div>
+                    </form>
+                    <li class="botonesConstantes">
+                            <div class="dropdown">
+                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/profile_icon.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item colorTextoPrimario" href="configuracion.html">Mi perfil</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="indexUnlogged.html">Desconectarse</a>
+                                </div>
+                            </div> 
+                            <div class="dropdown">
+                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/bell2_icon.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/starwars.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Star Wars</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/reservoir-dogs-banner-1024x640.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Reservoir Dogs</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/godzilla.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Godzilla</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario invisiblePropio" >Nuevo capitulo de Black Sailscon</a>
+                                </div>
+                            </div>  
+                    </li>
+                </ul>
+            </nav>
+        
+            <ul class="sidebar mobile">
+                <p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
+                <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
+                <div class="sidebarFlexLast">
+                    <form action="busqueda.html" class="buscadorPropio">
+                        <div class="input-group mb-2">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Actores, Generos, etc" aria-label="Search">
+                        </div>
+                    </form>
+                    <a class="sidebarButton colorTextoPrimario" href="peliculas.html">
+                        <p>Películas</p>
+                    </a>
+                    <a class="sidebarButton colorTextoPrimario" href="series.html">
+                        <p>Series</p>
+                    </a>
+                    <a class="sidebarButton colorTextoPrimario" href="lista.html">
+                        <p>Mi Lista</p>
+                    </a>
+                    
+                </div>
+            </ul>
+            <script src="navScript.js"></script>
 
 	<div class="contenedorPlayer">
 		<div class="contenedorSeriePelicula">
@@ -506,7 +516,7 @@
 	<div id="agregadoMiLista" class="mensajeMiLista hidden">
 		<p class="colorTextoPrimario">Agregado a Mi lista</p>
 	</div>
-	<div class="footerPagina">
+	<footer class="footerPagina">
 		<div class="redes">
 			<p>Seguinos en:</p>
 			<img src="images/facebookIcon.png" alt="" srcset="">
@@ -517,7 +527,7 @@
 			<p>Soporte:</p>
 			<img src="images/helpIconWhite.png" alt="" srcset="">
 		</div>
-	</div>
+	</footer>
 	
 	<script type="text/javascript" src="comments.js"></script>
 	<script type="text/javascript" src="player.js"></script>

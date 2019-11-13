@@ -13,6 +13,34 @@ nav{
     margin-bottom: 20px;
 }
 
+.notificacionPropia{
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+}
+
+.dropdown-item:hover{
+    background-color: #2F0323 !important;
+    background-image: none !important;
+}
+
+.notificacionPropia img{
+    margin-right: 8px;
+    display: block;
+    float: left;
+}
+
+.notificacionPropia p{
+    margin-top: 5px;
+}
+
+
+.card-img-top{
+    width: fit-content !important;
+    overflow: hidden;
+    float: left !important;
+}
+
 .colorTextoSecundario{
     color: #DEF1A6 !important;
 }
@@ -62,8 +90,19 @@ body{
 
 .buscadorPropio{
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 19px;
 }
+
+.buscadorPropio button{
+    border-color: #ACD439;
+    color: #ACD439;
+}
+.buscadorPropio button:hover{
+    background-color: #2F0323;
+    border-color: #ACD439;
+    color: #DEF1A6;
+}
+
 .botonesConstantes{
     width: 140px;
 
@@ -383,6 +422,36 @@ a{
     margin-top: 0;
 }
 
+.footerPagina{
+	width: 100%;
+	height: 100px;
+	color: #ACD439;
+	margin-top: 25px;
+}
+.footerPagina > div{
+	background-color: #91136e;
+	text-align: center;
+	width: 90%;
+	height: fit-content;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.redes > img{
+	margin: 0 10px 5px 0;
+	display: inline;
+}
+.soporteFoot img{
+	margin: 0 0 5px 0;
+}
+.footerPagina img:hover{
+	transform: scale(1.2);
+}
+
+.iconAndText p:hover{
+    color:#DEF1A6;
+}
+
+
 @keyframes open{
     0%{
         left: -260px; 
@@ -418,6 +487,16 @@ a{
     .triangle-up{
         left: 0;
     }
+    
+	.footerPagina{
+		height: fit-content;
+	}
+	.footerPagina > div{
+		float: left;
+		width: 50%;
+		padding: 20px 0 20px 0;
+		margin-bottom: 0;
+	}
 }
 
 .hidden{

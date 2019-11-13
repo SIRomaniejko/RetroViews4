@@ -23,7 +23,7 @@ input{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #A72D85;
+	background-color: #2F0323;
 	top:0;
 	bottom:0;
 	z-index: -2;
@@ -38,7 +38,7 @@ input{
 	padding-left: 5px;
 }
 .pasoSiguiente{
-	color: #A4A3A3;
+	color: #DEF1A6;
 }
 .contenedorLogin{
 	width: 90%;
@@ -129,6 +129,14 @@ label{
 .inputError{
 	background-color: #FFDCDC;
 	animation: animarInput 0.5s;
+}
+
+.formularioLogin, .anchorExtra p, .anchorExtra a{
+	color: white;
+}
+
+.botonConfirmar{
+	color: black;
 }
 @keyframes animarInput{
 	25%{transform: translateX(10px);}

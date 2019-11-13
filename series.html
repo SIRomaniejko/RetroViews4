@@ -12,7 +12,7 @@
 </head>
 <body>
 
-         <nav>   
+        <nav>   
                 
                 <ul class="nav-mobil">
                     <li id="hambaga" class="mobil">
@@ -43,12 +43,8 @@
                     
                     <form action="busqueda.html" class="buscadorPropio computer">
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-                            <div class="input-group-prepend ">
-                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-                                    <img src="images/search_icon2.png" alt="">
-                                </div>
-                            </div>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Actores, Generos, etc" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                         </div>
                     </form>
                     <li class="botonesConstantes">
@@ -66,28 +62,38 @@
                                     <img src="images/bell2_icon.png" alt="">
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de The Game</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Perdiste</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Valhalla</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Nuevo capitulo de Black Sailscon</a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/starwars.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Star Wars</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/reservoir-dogs-banner-1024x640.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Reservoir Dogs</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario" href="#">
+                                            <div class="notificacionPropia">
+                                                <img src="images/movie-posters/godzilla.jpg" alt="">
+                                                <p>Nuevo estreno: <br> Godzilla</p>
+                                            </div>
+                                    </a>
+                                    <a class="dropdown-item colorTextoPrimario invisiblePropio" >Nuevo capitulo de Black Sailscon</a>
                                 </div>
                             </div>  
                     </li>
                 </ul>
             </nav>
         
-            <ul class="sidebar">
+            <ul class="sidebar mobile">
                 <p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
                 <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
                 <div class="sidebarFlexLast">
                     <form action="busqueda.html" class="buscadorPropio">
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-                            <div class="input-group-prepend ">
-                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-                                    <img src="images/search_icon2.png" alt="">
-                                </div>
-                            </div>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Actores, Generos, etc" aria-label="Search">
                         </div>
                     </form>
                     <a class="sidebarButton colorTextoPrimario" href="peliculas.html">
@@ -103,7 +109,6 @@
                 </div>
             </ul>
             <script src="navScript.js"></script>
-
 
 
             <h1 style="text-align: center" class="colorTextoSecundario">Las mejores series a tu alcance</h1>
@@ -689,10 +694,20 @@
         <img class="js-scrollLeft algoTransparente scrollLeft computer" src="images/scroll-left-icon.png" alt="">
         <img src="images/scroll-right-icon.png" class="js-scrollRight algoTransparente scrollRight computer" alt="">
     </div>
-    <footer style="width:100%; height: 30px; background-color: #91136e; display: flex; flex-direction: row; justify-content: space-around">
-            <p style="display: inline-block; margin-top: 5px">RetroViews4 Inc.</p>
-            <a style="display: inline-block; margin-top: 5px" href="faq.html">soporte</a>
-        </footer>
+    <footer class="footerPagina">
+        <div class="redes">
+            <p>Seguinos en:</p>
+            <img src="images/facebookIcon.png" alt="" srcset="">
+            <img src="images/twitterIcon.png" alt="" srcset="">
+            <img src="images/instagramIcon.png" alt="" srcset="">
+        </div>
+        <div class="soporteFoot">
+            <p>Soporte:</p>
+            <a href="faq.html">
+                <img src="images/helpIconWhite.png" alt="" srcset="">
+            </a>
+        </div>
+    </footer>
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
