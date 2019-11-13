@@ -12,195 +12,211 @@
 	<title>FAQ</title>
 </head>
 <body>
-		<nav>   
+    <nav>   
+            
+            <ul class="nav-mobil">
+                <li id="hambaga" class="mobil">
+                    <img src="images/Hamburger_icon.png" alt="">
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="images/logo.png" alt="">
+                    </a>
+                </li>
+                <ul class="computer extraOptionsNav" class="bordeadoBajo">
+                        <li class="computer iconAndText">
+                            <a href="peliculas.html">
+                                <p>Películas</p>
+                            </a>
+                        </li>
+                        <li class="computer iconAndText" class="bordeadoBajo"">
+                            <a href="series.html">
+                                <p>Series</p>
+                            </a>
+                        </li>
+                        <li class="computer iconAndText" class="bordeadoBajo">
+                            <a href="lista.html">
+                                <p>Mi Lista</p>
+                            </a>
+                        </li>
+                </ul>
                 
-                <ul class="nav-mobil">
-                    <li id="hambaga" class="mobil">
-                        <img src="images/Hamburger_icon.png" alt="">
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img class="logo" src="images/logo.png" alt="">
-                        </a>
-                    </li>
-                    <ul class="computer extraOptionsNav" class="bordeadoBajo">
-                            <li class="computer iconAndText">
-                                <a href="peliculas.html">
-                                    <p>Películas</p>
-                                </a>
-                            </li>
-                            <li class="computer iconAndText" class="bordeadoBajo"">
-                                <a href="series.html">
-                                    <p>Series</p>
-                                </a>
-                            </li>
-                            <li class="computer iconAndText" class="bordeadoBajo">
-                                <a href="lista.html">
-                                    <p>Mi Lista</p>
-                                </a>
-                            </li>
-                    </ul>
-                    
-                    <div id="notificacionContainer" class="hidden">
-                        <div id="notification">
-                            <div class="triangle-up"></div>
-                            <div class="notification-body">
-                                <div>
-                                    <h6>Nuevo Episodio de The Game</h6>
-                                    <img src="images/reservoirdogs.jpg" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                <div>
-                                    <h6>Nuevo Episodio de The Game</h6>
-                                    <img src="images/reservoirdogs.jpg" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                <div>
-                                    <h6>Nuevo Episodio de The Game</h6>
-                                    <img src="images/reservoirdogs.jpg" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
+                <div id="notificacionContainer" class="hidden">
+                    <div id="notification">
+                        <div class="triangle-up"></div>
+                        <div class="notification-body">
+                            <div>
+                                <h6>Nuevo Episodio de The Game</h6>
+                                <img src="images/reservoirdogs.jpg" alt="">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <h6>Nuevo Episodio de The Game</h6>
+                                <img src="images/reservoirdogs.jpg" alt="">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <h6>Nuevo Episodio de The Game</h6>
+                                <img src="images/reservoirdogs.jpg" alt="">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
-                    <form action="busqueda.html" class="buscadorPropio computer">
-                        <div class="input-group mb-2">
-                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-                            <div class="input-group-prepend ">
-                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-                                    <img src="images/search_icon2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <li class="botonesConstantes">
-                            
-                            <div class="dropdown">
-                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="images/profile_icon.png" alt="">
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item colorTextoPrimario" href="configuracion.html">Mi perfil</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="indexUnlogged.html">Desconectarse</a>
-                                </div>
-                            </div> 
-                            <div class="dropdown">
-                                <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="images/bell2_icon.png" alt="">
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Action</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Another action</a>
-                                    <a class="dropdown-item colorTextoPrimario" href="#">Something else here</a>
-                                </div>
-                            </div>  
-                    </li>
-                </ul>
-            </nav>
-        
-            <ul class="sidebar">
-                <p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
-                <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
-                <div class="sidebarFlexLast">
-                    <form action="busqueda.html" class="buscadorPropio">
-                        <div class="input-group mb-2">
-                            <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
-                            <div class="input-group-prepend ">
-                                <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
-                                    <img src="images/search_icon2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <a class="sidebarButton colorTextoPrimario" href="peliculas.html">
-                        <p>Películas</p>
-                    </a>
-                    <a class="sidebarButton colorTextoPrimario" href="series.html">
-                        <p>Series</p>
-                    </a>
-                    <a class="sidebarButton colorTextoPrimario" href="lista.html">
-                        <p>Mi Lista</p>
-                    </a>
-                    
                 </div>
+                <form action="busqueda.html" class="buscadorPropio computer">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
+                        <div class="input-group-prepend ">
+                            <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
+                                <img src="images/search_icon2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <li class="botonesConstantes">
+                        
+                        <div class="dropdown">
+                            <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/profile_icon.png" alt="">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item colorTextoPrimario" href="configuracion.html">Mi perfil</a>
+                                <a class="dropdown-item colorTextoPrimario" href="indexUnlogged.html">Desconectarse</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">
+                            <button class="btn noFondo dropdown-toggle botonesNav noAfter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/bell2_icon.png" alt="">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right colorPrincipal" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item colorTextoPrimario" href="#">Action</a>
+                                <a class="dropdown-item colorTextoPrimario" href="#">Another action</a>
+                                <a class="dropdown-item colorTextoPrimario" href="#">Something else here</a>
+                            </div>
+                        </div>  
+                </li>
             </ul>
-            <script src="navScript.js"></script>
+        </nav>
+        
+    <ul class="sidebar">
+        <p id="nombreSitio" class="colorTextoPrimario">RetroViews4</p>
+        <button id="cerrarSidebar"><img src="images/x_icon.png" alt=""></button>
+        <div class="sidebarFlexLast">
+            <form action="busqueda.html" class="buscadorPropio">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control bordeNegro colorFondo colorTextoSecundario" id="inlineFormInputGroup" placeholder="Programas, Actores, etc">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text noPadding botonLupa colorFondo bordeNegro">
+                            <img src="images/search_icon2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <a class="sidebarButton colorTextoPrimario" href="peliculas.html">
+                <p>Películas</p>
+            </a>
+            <a class="sidebarButton colorTextoPrimario" href="series.html">
+                <p>Series</p>
+            </a>
+            <a class="sidebarButton colorTextoPrimario" href="lista.html">
+                <p>Mi Lista</p>
+            </a>
+            
+        </div>
+    </ul>
+    <script src="navScript.js"></script>
 
-<div class="contenedorMayorFaq">
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-	<div class="contenedorFaq">
-		<div class="pregunta">
-			<p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
-		</div>
-		<div class="respuesta">
-			<p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
-		</div>
-		<div class="lineaFaq"></div>
-	</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <div class="contenedorMayorFaq">
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+        <div class="contenedorFaq">
+            <div class="pregunta">
+                <p class="colorTextoPrimario">¿como hago para encontrar la pelicula que estoy buscando?</p>
+            </div>
+            <div class="respuesta">
+                <p class="colorTextoSecundario">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis praesentium accusantium quas aspernatur suscipit dolorem blanditiis voluptas, vel distinctio</p>
+            </div>
+            <div class="lineaFaq"></div>
+        </div>
+    </div>
+
+    <footer class="footerPagina">
+        <div class="redes">
+            <p>Seguinos en:</p>
+            <img src="images/facebookIcon.png" alt="" srcset="">
+            <img src="images/twitterIcon.png" alt="" srcset="">
+            <img src="images/instagramIcon.png" alt="" srcset="">
+        </div>
+        <div class="soporteFoot">
+            <p>Soporte:</p>
+            <a href="faq.html">
+                <img src="images/helpIconWhite.png" alt="" srcset="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

@@ -1,8 +1,3 @@
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-}
-
-
 .scroll-movies{
     position: relative;
     width: 100%;
@@ -221,7 +216,16 @@
     }
 }
 
-
+.tituloIndexUnlog{
+    font-size: 18px;
+}
+.lineaDelFooter{
+    width: 100%;
+    height: 1px;
+}
+.contenidoIndex{
+    overflow: hidden;
+}
 @media (min-width: 900px){
     .scroll-movies{
         
@@ -285,7 +289,9 @@
         position: absolute; bottom: 5px; left: 6px;
         color: white;
     }
-    
+    .tituloIndexUnlog{
+        font-size: 32px;
+    }
 }
 
 .algoTransparente{
